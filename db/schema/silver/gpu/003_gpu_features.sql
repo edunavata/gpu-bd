@@ -1,28 +1,31 @@
--- GPU Features: Tecnologías y capacidades binarias/enumeradas
--- NO es un scoring, es presencia/ausencia de tecnología hardware
+-- ============================================================
+-- SILVER LAYER
+-- Purpose: Curated feature flags and capability metadata per GPU chip.
+-- Data characteristics: Reference table; rows represent the latest known feature set and can be updated in place.
+-- Row meaning: One row per chip, capturing support for hardware and API features.
+-- ============================================================
 
+-- Encodes binary/enumerated capabilities without deriving a score.
 CREATE TABLE IF NOT EXISTS gpu_features (
     chip_id TEXT PRIMARY KEY,
     
-    -- Ray Tracing
+    -- Ray tracing capabilities and API support.
     raytracing_hardware BOOLEAN NOT NULL DEFAULT 0,
-    raytracing_api_support TEXT,  -- "DirectX Raytracing (DXR)", "Vulkan RT"
+    raytracing_api_support TEXT,
     
-    -- NVIDIA-specific
-    cuda_compute_capability TEXT,  -- "8.9", "9.0" (versión de arquitectura CUDA)
-    dlss_version TEXT,             -- "3.5", "3.7" (NULL si no soporta)
-    nvenc_generation TEXT,         -- "8th Gen", "9th Gen"
+    -- Vendor-specific capabilities; values may be NULL/false for other vendors.
+    cuda_compute_capability TEXT,
+    dlss_version TEXT,
+    nvenc_generation TEXT,
     nvidia_reflex BOOLEAN DEFAULT 0,
     
-    -- AMD-specific
-    fsr_support BOOLEAN DEFAULT 0,  -- FidelityFX Super Resolution
-    amd_fmf BOOLEAN DEFAULT 0,      -- Fluid Motion Frames
+    fsr_support BOOLEAN DEFAULT 0,
+    amd_fmf BOOLEAN DEFAULT 0,
     amd_hypr_rx BOOLEAN DEFAULT 0,
     
-    -- Intel-specific
-    xess_support BOOLEAN DEFAULT 0,  -- Xe Super Sampling
+    xess_support BOOLEAN DEFAULT 0,
     
-    -- Multi-vendor standards
+    -- Cross-vendor standards and features.
     av1_encode BOOLEAN DEFAULT 0,
     av1_decode BOOLEAN DEFAULT 0,
     resizable_bar BOOLEAN DEFAULT 0,

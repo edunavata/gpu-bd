@@ -1,30 +1,25 @@
-# Documentación de Capa Silver: Dominio GPU
+# GPU Silver Model
 
-Este documento define el modelo de datos normalizado (3NF) para GPUs en la capa Silver del sistema PcBuilder.
+The Silver layer of the GPU domain represents a normalized and historical view of the GPU market,
+combining canonical hardware definitions with immutable external market observations.
 
-La capa Silver representa la fuente de verdad estructural, desacoplada de retailers, precios y ruido de scraping.
-Su objetivo es servir como base estable para:
+This layer is designed to:
+- Preserve historical truth
+- Normalize unstable external data
+- Provide a stable foundation for analytical and decision-making logic
 
-- Capa Gold (configuraciones óptimas)
-- Algoritmos deterministas de selección
-- Razonamiento LLM con contexto fiable
 
-## Principios de Diseño (Silver)
+## Conceptual Overview
 
-- Normalización estricta: una entidad = un concepto del dominio.
-- Separación semántica:
-  - Chip ≠ Variante ≠ Oferta
-- Estabilidad temporal:
-  - El chip y sus capacidades no dependen del mercado.
-  - El precio y stock son efímeros.
-- Trazabilidad:
-  - Cada fila Silver debe ser rastreable a Bronze.
-- SQL-first:
-  - El esquema Silver es independiente de LLMs, UIs o scrapers.
+The GPU Silver model separates the domain into two clearly differentiated concerns:
 
-## Diagrama de Entidad-Relación
+1. **Canonical GPU definitions**
+2. **External market observations**
 
-Nota: el diagrama es representación visual, no contrato físico SQL.
+This separation allows the system to reason about GPUs independently of how retailers
+publish, change, or remove product listings over time.
+
+---
 
 ```mermaid
 %%{init: {
@@ -42,7 +37,7 @@ erDiagram
     gpu_chip ||--|| gpu_memory : has
     gpu_chip ||--|| gpu_features : has
     gpu_chip ||--o{ gpu_variant : is_basis_for
-    gpu_variant ||--o{ gpu_offer : appears_in
+    gpu_variant ||--o{ gpu_market_observation : observed_in
 
     gpu_chip {
         string chip_id
@@ -87,119 +82,147 @@ erDiagram
         string power_connectors
     }
 
-    gpu_offer {
-        string offer_id
+    gpu_market_observation {
+        string observation_id
         string variant_id
         string retailer
+        string sku
+        string product_url
         float price_eur
-        float original_price_eur
         string stock_status
-        string last_seen_at
+        string observed_at
+        string scrape_run_id
     }
 ```
 
-## Definición Canónica de Entidades
+---
 
-### gpu_chip
 
-Representa el silicio base diseñado por el fabricante (NVIDIA / AMD).
+## Canonical GPU Definitions
 
-Clave primaria: chip_id
+Canonical entities describe **what a GPU is**, independently of where or how it is sold.
 
-Inmutable en el tiempo
+These entities are stable, normalized, and internally controlled.
 
-Ejemplo: AD104, GA102, NAVI31
+### GPU Chip
 
-Responsabilidades:
+Represents the underlying GPU silicon design.
 
-- Arquitectura
-- Unidades de cómputo
-- Capacidades base del chip
+A chip defines:
+- The vendor and architecture
+- Compute and acceleration capabilities
+- Power and interface characteristics
 
-### gpu_memory
+A chip is the common base for multiple commercial GPU variants.
 
-Describe el subsistema de memoria del chip.
+---
 
-Relación 1:1 con gpu_chip
+### GPU Memory
 
-No depende del ensamblador
+Represents the memory configuration associated with a GPU chip.
 
-Define límites físicos del chip
+Memory is modeled separately to:
+- Capture technical constraints explicitly
+- Avoid duplication across variants
+- Keep chip definitions focused on compute capabilities
 
-### gpu_features
+Each chip has exactly one memory configuration.
 
-Capacidades funcionales del chip.
+---
 
-Relación 1:1 con gpu_chip
+### GPU Features
 
-Flags técnicos (ray tracing, AV1, DLSS/FSR)
+Represents feature-level capabilities exposed by the GPU chip.
 
-Usado intensivamente por reglas Gold y razonamiento LLM
+This includes hardware support for:
+- Ray tracing
+- Upscaling technologies
+- Encoding formats
+- Compute APIs
 
-### gpu_variant
+Features are modeled independently to keep chip definitions concise and evolvable.
 
-Representa una implementación comercial del chip por un AIB (ASUS, MSI, Gigabyte...).
+Each chip has exactly one feature set.
 
-Relación N:1 con gpu_chip
+---
 
-Afecta a:
+### GPU Variant
 
-- Dimensiones físicas
-- Refrigeración
-- Conectores de energía
+Represents a commercial, physical GPU product derived from a chip.
 
-Ejemplo:
+A variant captures:
+- Board partner customization
+- Physical dimensions
+- Cooling and power characteristics
 
-- RTX 4070 Ti Gaming OC
-- RTX 4070 Ti Ventus 2X
+Multiple variants can be derived from the same chip.
+Variants are the atomic unit used for market comparison.
 
-### gpu_offer
+---
 
-Instancia de mercado de una variante concreta.
+## Market Observations
 
-Relación N:1 con gpu_variant
+Market data represents **what is observed**, not what is controlled.
 
-Entidad volátil
+This data is inherently unstable and is therefore modeled as immutable events.
 
-Puede desaparecer o cambiar de precio
+### Market Observation
 
-Incluye:
+A market observation represents a single point-in-time snapshot of how a GPU variant
+appears on an external retailer.
 
-- Precio actual
-- Precio original
-- Estado de stock
-- Última detección
+An observation captures:
+- The retailer context
+- The observed price
+- The observed stock state
+- External identifiers as they existed at that moment
 
-## Reglas de Integridad (no visibles en Mermaid)
+Observations are:
+- Append-only
+- Never updated or deleted
+- The sole source of historical price and availability data
 
-Estas reglas DEBEN cumplirse en SQL:
+The system does not attempt to maintain a notion of a “current offer” at this layer.
+Current state is always derived downstream.
 
-- gpu_memory.chip_id → FK a gpu_chip.chip_id
-- gpu_features.chip_id → FK a gpu_chip.chip_id
-- gpu_variant.chip_id → FK a gpu_chip.chip_id
-- gpu_offer.variant_id → FK a gpu_variant.variant_id
+---
 
-## Antipatrones Evitados (a propósito)
+## Relationships and Data Flow
 
-- ❌ Mezclar precios con especificaciones
-- ❌ Duplicar información del chip en variantes
-- ❌ Modelos "flat" dependientes del retailer
-- ❌ Campos calculados en Silver
+The Silver model enforces a one-way dependency flow:
 
-## Relación con Otras Capas
+- Chips define the technical base
+- Variants define sellable products
+- Observations describe market behavior over time
 
-| Capa | Rol |
-| --- | --- |
-| Bronze | Datos crudos de scrapers |
-| Silver | Dominio limpio y normalizado |
-| Gold | Configuraciones óptimas, scoring, rankings |
+No Silver entity depends on Gold logic or derived state.
 
-Silver no decide, no optimiza, no recomienda.
-Silver define la realidad del dominio.
+---
 
-## Estado del Modelo
+## Design Principles
 
-- ✔ Normalizado (3NF)
-- ✔ Escalable
-- ✔ Compatible con SQLite / PostgreSQL
-- ✔ Preparado para razonamiento LLM determinista
+The GPU Silver model follows these principles:
+
+- **Historical truth over convenience**  
+  External data is never overwritten.
+
+- **Normalization of stable concepts**  
+  Chips, features, and variants are controlled internally.
+
+- **Event-based modeling for unstable data**  
+  Market data is treated as a stream of observations.
+
+- **Clear separation of concerns**  
+  Technical definitions and market behavior are modeled independently.
+
+---
+
+## Non-Goals
+
+The Silver layer does not:
+- Determine the “best” price
+- Aggregate or rank offers
+- Predict future prices
+- Contain user-facing logic
+
+All such concerns belong to the Gold layer or higher.

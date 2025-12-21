@@ -1,6 +1,19 @@
-# GPU
+# GPU Domain
 
-Domain documentation for GPUs.
+This domain models the GPU (Graphics Processing Unit) market as observed from external retailers.
 
-- silver.md: normalized model for the GPU Silver layer
-- schema.sql.md: how the SQL schema is organized
+Scope:
+- GPU technical characteristics (chip, memory, features)
+- Normalized GPU variants
+- Historical market observations (price and stock)
+- Derived current prices for comparison purposes
+
+Out of scope:
+- User preferences
+- Recommendations logic
+- Forecasting or predictions
+
+Data Sources:
+- External e-commerce retailers (e.g. PcComponentes, Amazon)
+
+All data is ingested as immutable observations.
