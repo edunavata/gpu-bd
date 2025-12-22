@@ -150,11 +150,19 @@ Represents the underlying GPU silicon design.
 A chip defines:
 - The vendor and architecture (normalized references)
 - Compute and acceleration capabilities
+- Typical sustained clock frequency via `typical_clock_mhz`
 - Power and interface characteristics, including PCIe generation
 
 A chip is the common base for multiple commercial GPU variants.
 Product identity fields such as brand_series and code_name remain controlled text to avoid
 normalizing unstable naming.
+
+Clock semantics:
+- `typical_clock_mhz` represents the typical sustained operating frequency under load.
+- It is a vendor-neutral abstraction: AMD Game Clock, NVIDIA Base Clock.
+- It is not the minimum guaranteed clock and is not split into base/game/boost triplets.
+- This choice maximizes cross-vendor comparability and avoids over-modeling.
+- Boost clocks remain modeled separately as peak capability on `gpu_variant.factory_boost_mhz`.
 
 ---
 
@@ -185,6 +193,14 @@ This includes hardware support for:
 Features are modeled independently to keep chip definitions concise and evolvable.
 
 Each chip has exactly one feature set.
+
+Capability semantics:
+- `tensor_cores` is a capability indicator for dedicated matrix/AI hardware only.
+  It does not imply cross-vendor performance equivalence or parity.
+- `cuda_compute_capability` is NVIDIA-only by design; NULL values for AMD are semantically correct
+  and used for compatibility filtering, not scoring.
+- Silver models capabilities, not implementations; detailed architectural equivalence is
+  intentionally out of scope.
 
 ---
 
@@ -280,6 +296,18 @@ The GPU Silver model follows these principles:
 
 - **Clear separation of concerns**  
   Technical definitions and market behavior are modeled independently.
+
+---
+
+## Scope Boundaries
+
+The Silver layer intentionally does not model:
+- Chiplet internals (GCD vs MCD)
+- Voltage, stepping, or SKU binning
+- Base clocks as minimum guaranteed values
+- Vendor-specific microarchitectural details
+
+If a detail does not materially affect recommendation outcomes, it is excluded by design.
 
 ---
 

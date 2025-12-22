@@ -23,8 +23,8 @@ CREATE TABLE IF NOT EXISTS gpu_chip (
     tensor_cores INTEGER DEFAULT 0,
     
     -- Frecuencias (MHz)
-    base_clock_mhz INTEGER CHECK (base_clock_mhz > 0),
-    boost_clock_mhz INTEGER CHECK (boost_clock_mhz >= base_clock_mhz),
+    typical_clock_mhz INTEGER CHECK (typical_clock_mhz > 0),
+    boost_clock_mhz INTEGER CHECK (boost_clock_mhz >= typical_clock_mhz),
     
     -- Potencia
     tdp_watts INTEGER NOT NULL CHECK (tdp_watts > 0),

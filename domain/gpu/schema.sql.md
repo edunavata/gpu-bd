@@ -12,6 +12,18 @@ The Silver layer uses selective normalization:
 
 This avoids overengineering and keeps common queries direct.
 
+Clock semantics:
+- `gpu_chip.typical_clock_mhz` captures the typical sustained operating frequency under load in a
+  vendor-neutral way (AMD Game Clock, NVIDIA Base Clock).
+- It is not a minimum guaranteed clock and is not split into base/game/boost triplets.
+- Peak boost clocks are represented by `gpu_variant.factory_boost_mhz`.
+
+Capability semantics:
+- `gpu_chip.tensor_cores` indicates presence of dedicated matrix/AI hardware only; it does not
+  imply cross-vendor performance equivalence.
+- `gpu_features.cuda_compute_capability` is NVIDIA-only by design; NULL values for AMD are
+  semantically correct and used for compatibility filtering, not scoring.
+
 ### Tables
 
 | Table Name | Description |
