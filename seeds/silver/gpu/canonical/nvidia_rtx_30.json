@@ -2,7 +2,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3090 Ti",
       "code_name": "GA102-350",
       "architecture": "Ampere",
@@ -45,7 +45,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3090",
       "code_name": "GA102-300",
       "architecture": "Ampere",
@@ -88,7 +88,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3080 Ti",
       "code_name": "GA102-225",
       "architecture": "Ampere",
@@ -131,7 +131,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3080 12GB",
       "code_name": "GA102-220",
       "architecture": "Ampere",
@@ -174,7 +174,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3080 10GB",
       "code_name": "GA102-200",
       "architecture": "Ampere",
@@ -217,7 +217,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3070 Ti",
       "code_name": "GA104-400",
       "architecture": "Ampere",
@@ -260,7 +260,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3070",
       "code_name": "GA104-300",
       "architecture": "Ampere",
@@ -303,7 +303,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3060 Ti GDDR6X",
       "code_name": "GA104-202",
       "architecture": "Ampere",
@@ -346,7 +346,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3060 Ti",
       "code_name": "GA104-200",
       "architecture": "Ampere",
@@ -389,7 +389,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3060 12GB",
       "code_name": "GA106-300",
       "architecture": "Ampere",
@@ -432,7 +432,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3060 8GB",
       "code_name": "GA106-302",
       "architecture": "Ampere",
@@ -475,7 +475,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3050 8GB",
       "code_name": "GA106-150",
       "architecture": "Ampere",
@@ -518,7 +518,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3050 OEM",
       "code_name": "GA106-150",
       "architecture": "Ampere",
@@ -561,7 +561,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 30 Series",
+      "brand_series": "GeForce RTX 30",
       "model_name": "GeForce RTX 3050 6GB",
       "code_name": "GA107-325",
       "architecture": "Ampere",

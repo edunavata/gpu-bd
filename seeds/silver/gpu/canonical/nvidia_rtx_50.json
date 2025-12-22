@@ -2,7 +2,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 50 Series",
+      "brand_series": "GeForce RTX 50",
       "model_name": "GeForce RTX 5090",
       "code_name": "GB202-300",
       "architecture": "Blackwell",
@@ -45,7 +45,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 50 Series",
+      "brand_series": "GeForce RTX 50",
       "model_name": "GeForce RTX 5080",
       "code_name": "GB203-400",
       "architecture": "Blackwell",
@@ -88,7 +88,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 50 Series",
+      "brand_series": "GeForce RTX 50",
       "model_name": "GeForce RTX 5070 Ti",
       "code_name": "GB203-300",
       "architecture": "Blackwell",
@@ -131,7 +131,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 50 Series",
+      "brand_series": "GeForce RTX 50",
       "model_name": "GeForce RTX 5070",
       "code_name": "GB205-300",
       "architecture": "Blackwell",
@@ -174,7 +174,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 50 Series",
+      "brand_series": "GeForce RTX 50",
       "model_name": "GeForce RTX 5060 Ti 16GB",
       "code_name": "GB206-300",
       "architecture": "Blackwell",
@@ -217,7 +217,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 50 Series",
+      "brand_series": "GeForce RTX 50",
       "model_name": "GeForce RTX 5060 Ti 8GB",
       "code_name": "GB206-300",
       "architecture": "Blackwell",
@@ -260,7 +260,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 50 Series",
+      "brand_series": "GeForce RTX 50",
       "model_name": "GeForce RTX 5060",
       "code_name": "GB206-250",
       "architecture": "Blackwell",
@@ -303,7 +303,7 @@
   {
     "chip": {
       "vendor": "NVIDIA",
-      "brand_series": "GeForce RTX 50 Series",
+      "brand_series": "GeForce RTX 50",
       "model_name": "GeForce RTX 5050",
       "code_name": "GB207-300",
       "architecture": "Blackwell",

@@ -9,23 +9,22 @@
 CREATE TABLE IF NOT EXISTS gpu_memory (
     chip_id TEXT PRIMARY KEY,
     
-    -- Constrain memory attributes to known, comparable domains.
+    -- Capacidad
     vram_gb INTEGER NOT NULL CHECK (vram_gb > 0),
-    memory_type TEXT NOT NULL CHECK (
-        memory_type IN ('GDDR6', 'GDDR6X', 'GDDR7', 'HBM2', 'HBM3')
-    ),
     
+    -- Tipo normalizado
+    memory_type_id TEXT NOT NULL,
+    
+    -- Bus y velocidad
     memory_bus_bits INTEGER NOT NULL CHECK (
-        memory_bus_bits IN (64, 96, 128, 160, 192, 256, 320, 384, 512)
+        memory_bus_bits IN (64, 96, 128, 192, 256, 320, 384, 512, 1024, 2048, 4096)
     ),
     memory_speed_gbps REAL CHECK (memory_speed_gbps > 0),
-    
-    -- Store derived bandwidth for convenience in analytical queries.
-    -- bandwidth_gbs = (memory_bus_bits / 8) * memory_speed_gbps
     memory_bandwidth_gbs REAL CHECK (memory_bandwidth_gbs > 0),
     
-    FOREIGN KEY (chip_id) REFERENCES gpu_chip(chip_id) ON DELETE CASCADE
+    FOREIGN KEY (chip_id) REFERENCES gpu_chip(chip_id) ON DELETE CASCADE,
+    FOREIGN KEY (memory_type_id) REFERENCES gpu_memory_type(memory_type_id)
 );
 
--- Index to accelerate VRAM capacity filters.
 CREATE INDEX IF NOT EXISTS idx_gpu_memory_vram ON gpu_memory(vram_gb);
+CREATE INDEX IF NOT EXISTS idx_gpu_memory_type ON gpu_memory(memory_type_id);

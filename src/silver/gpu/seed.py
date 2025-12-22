@@ -57,11 +57,11 @@ FEATURE_FIELDS = (
 CHIP_UPSERT_SQL = """
 INSERT INTO gpu_chip (
     chip_id,
-    vendor,
+    vendor_id,
     brand_series,
     model_name,
     code_name,
-    architecture,
+    architecture_id,
     process_node_nm,
     launch_date,
     compute_units_type,
@@ -77,11 +77,11 @@ INSERT INTO gpu_chip (
 )
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 ON CONFLICT(chip_id) DO UPDATE SET
-    vendor = excluded.vendor,
+    vendor_id = excluded.vendor_id,
     brand_series = excluded.brand_series,
     model_name = excluded.model_name,
     code_name = excluded.code_name,
-    architecture = excluded.architecture,
+    architecture_id = excluded.architecture_id,
     process_node_nm = excluded.process_node_nm,
     launch_date = excluded.launch_date,
     compute_units_type = excluded.compute_units_type,
@@ -101,7 +101,7 @@ MEMORY_UPSERT_SQL = """
 INSERT INTO gpu_memory (
     chip_id,
     vram_gb,
-    memory_type,
+    memory_type_id,
     memory_bus_bits,
     memory_speed_gbps,
     memory_bandwidth_gbs
@@ -109,7 +109,7 @@ INSERT INTO gpu_memory (
 VALUES (?, ?, ?, ?, ?, ?)
 ON CONFLICT(chip_id) DO UPDATE SET
     vram_gb = excluded.vram_gb,
-    memory_type = excluded.memory_type,
+    memory_type_id = excluded.memory_type_id,
     memory_bus_bits = excluded.memory_bus_bits,
     memory_speed_gbps = excluded.memory_speed_gbps,
     memory_bandwidth_gbs = excluded.memory_bandwidth_gbs
@@ -161,6 +161,48 @@ def _stable_id(prefix: str, parts: Iterable[Any]) -> str:
             normalized_parts.append(str(part).strip().lower())
     digest = hashlib.sha256("|".join(normalized_parts).encode("utf-8")).hexdigest()
     return f"{prefix}_{digest}"
+
+
+def _normalize_reference(value: Any) -> str:
+    return "".join(ch for ch in str(value).strip().lower() if ch.isalnum())
+
+
+def _load_reference_map(cursor, table: str, id_column: str) -> dict[str, str]:
+    cursor.execute(f"SELECT {id_column} FROM {table}")
+    mapping: dict[str, str] = {}
+    for row in cursor.fetchall():
+        ref_id = row[0]
+        if ref_id is None:
+            continue
+        key = _normalize_reference(ref_id)
+        if key in mapping and mapping[key] != ref_id:
+            raise ValueError(
+                f"Ambiguous {table} identifiers for key '{key}': "
+                f"{mapping[key]} vs {ref_id}"
+            )
+        mapping[key] = ref_id
+    return mapping
+
+
+def _resolve_reference(
+    value: Any,
+    mapping: dict[str, str],
+    table: str,
+    field: str,
+    source: Path,
+    index: int,
+) -> str:
+    if value is None:
+        raise ValueError(
+            f"{source} entry {index} missing {field} value for {table} lookup"
+        )
+    key = _normalize_reference(value)
+    ref_id = mapping.get(key)
+    if ref_id is None:
+        raise ValueError(
+            f"{source} entry {index} has unknown {field} '{value}' for {table}"
+        )
+    return ref_id
 
 
 def _load_seed_file(path: Path) -> list[dict[str, Any]]:
@@ -239,16 +281,22 @@ def _chip_id(chip: dict[str, Any], memory: dict[str, Any]) -> str:
     return _stable_id("chip", _chip_id_parts(chip, memory))
 
 
-def _insert_chip(cursor, chip_id: str, chip: dict[str, Any]) -> None:
+def _insert_chip(
+    cursor,
+    chip_id: str,
+    chip: dict[str, Any],
+    vendor_id: str,
+    architecture_id: str,
+) -> None:
     cursor.execute(
         CHIP_UPSERT_SQL,
         (
             chip_id,
-            chip["vendor"],
+            vendor_id,
             chip["brand_series"],
             chip["model_name"],
             chip["code_name"],
-            chip["architecture"],
+            architecture_id,
             chip["process_node_nm"],
             chip["launch_date"],
             chip["compute_units_type"],
@@ -265,13 +313,18 @@ def _insert_chip(cursor, chip_id: str, chip: dict[str, Any]) -> None:
     )
 
 
-def _insert_memory(cursor, chip_id: str, memory: dict[str, Any]) -> None:
+def _insert_memory(
+    cursor,
+    chip_id: str,
+    memory: dict[str, Any],
+    memory_type_id: str,
+) -> None:
     cursor.execute(
         MEMORY_UPSERT_SQL,
         (
             chip_id,
             memory["vram_gb"],
-            memory["memory_type"],
+            memory_type_id,
             memory["memory_bus_bits"],
             memory["memory_speed_gbps"],
             memory["memory_bandwidth_gbs"],
@@ -304,6 +357,9 @@ def _insert_features(cursor, chip_id: str, features: dict[str, Any]) -> None:
 def seed() -> dict[str, int]:
     conn = get_connection()
     cursor = conn.cursor()
+    vendor_map = _load_reference_map(cursor, "gpu_vendor", "vendor_id")
+    architecture_map = _load_reference_map(cursor, "gpu_architecture", "architecture_id")
+    memory_type_map = _load_reference_map(cursor, "gpu_memory_type", "memory_type_id")
     seen: dict[str, tuple[dict[str, Any], dict[str, Any], dict[str, Any]]] = {}
     seeded = {"chips": 0}
 
@@ -311,6 +367,30 @@ def seed() -> dict[str, int]:
         conn.execute("BEGIN")
         for source, index, entry in _iter_seed_entries(SEED_DIR):
             chip, memory, features = _parse_entry(entry, source, index)
+            vendor_id = _resolve_reference(
+                chip["vendor"],
+                vendor_map,
+                "gpu_vendor",
+                "vendor",
+                source,
+                index,
+            )
+            architecture_id = _resolve_reference(
+                chip["architecture"],
+                architecture_map,
+                "gpu_architecture",
+                "architecture",
+                source,
+                index,
+            )
+            memory_type_id = _resolve_reference(
+                memory["memory_type"],
+                memory_type_map,
+                "gpu_memory_type",
+                "memory_type",
+                source,
+                index,
+            )
             chip_id = _chip_id(chip, memory)
             signature = _entry_signature(chip, memory, features)
 
@@ -322,8 +402,8 @@ def seed() -> dict[str, int]:
                 continue
 
             seen[chip_id] = signature
-            _insert_chip(cursor, chip_id, chip)
-            _insert_memory(cursor, chip_id, memory)
+            _insert_chip(cursor, chip_id, chip, vendor_id, architecture_id)
+            _insert_memory(cursor, chip_id, memory, memory_type_id)
             _insert_features(cursor, chip_id, features)
 
             seeded["chips"] += 1
