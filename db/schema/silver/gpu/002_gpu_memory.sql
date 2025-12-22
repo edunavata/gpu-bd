@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS gpu_memory (
     ),
     
     memory_bus_bits INTEGER NOT NULL CHECK (
-        memory_bus_bits IN (64, 128, 192, 256, 320, 384, 512)
+        memory_bus_bits IN (64, 96, 128, 160, 192, 256, 320, 384, 512)
     ),
     memory_speed_gbps REAL CHECK (memory_speed_gbps > 0),
     
