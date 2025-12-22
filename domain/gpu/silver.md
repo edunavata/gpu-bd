@@ -1,11 +1,11 @@
 # GPU Silver Model
 
-The Silver layer of the GPU domain represents a normalized and historical view of the GPU market,
+The Silver layer of the GPU domain represents a selectively normalized and historical view of the GPU market,
 combining canonical hardware definitions with immutable external market observations.
 
 This layer is designed to:
 - Preserve historical truth
-- Normalize unstable external data
+- Normalize stable reference semantics without overengineering volatile naming
 - Provide a stable foundation for analytical and decision-making logic
 
 
@@ -34,17 +34,42 @@ publish, change, or remove product listings over time.
   }
 }}%%
 erDiagram
+    gpu_vendor ||--o{ gpu_architecture : defines
+    gpu_vendor ||--o{ gpu_chip : supplies
+    gpu_architecture ||--o{ gpu_chip : is_used_by
+    gpu_memory_type ||--o{ gpu_memory : standardizes
     gpu_chip ||--|| gpu_memory : has
     gpu_chip ||--|| gpu_features : has
     gpu_chip ||--o{ gpu_variant : is_basis_for
     gpu_variant ||--o{ gpu_market_observation : observed_in
 
+    gpu_vendor {
+        string vendor_id
+        string full_name
+        string compute_unit_name
+    }
+
+    gpu_architecture {
+        string architecture_id
+        string vendor_id
+        string generation
+        int process_node_nm
+    }
+
+    gpu_memory_type {
+        string memory_type_id
+        int generation
+        string standard_name
+        float max_speed_gbps
+    }
+
     gpu_chip {
         string chip_id
-        string vendor
+        string vendor_id
+        string architecture_id
         string brand_series
         string model_name
-        string architecture
+        string code_name
         string compute_units_type
         int compute_units_count
         int rt_cores
@@ -56,7 +81,7 @@ erDiagram
     gpu_memory {
         string chip_id
         int vram_gb
-        string memory_type
+        string memory_type_id
         int memory_bus_bits
         float memory_speed_gbps
         float memory_bandwidth_gbs
@@ -65,6 +90,7 @@ erDiagram
     gpu_features {
         string chip_id
         bool raytracing_hardware
+        string raytracing_api_support
         string dlss_version
         bool fsr_support
         bool av1_encode
@@ -76,6 +102,7 @@ erDiagram
         string chip_id
         string aib_manufacturer
         string model_suffix
+        int factory_boost_mhz
         int length_mm
         float width_slots
         string cooling_type
@@ -97,23 +124,37 @@ erDiagram
 
 ---
 
+## Normalization Strategy
+
+The Silver layer uses selective, pragmatic normalization:
+- Normalized reference tables: `gpu_vendor`, `gpu_architecture`, `gpu_memory_type`
+  (low cardinality, stable semantics, rich metadata, reused across the domain)
+- Controlled text fields: `brand_series`, `code_name`, `pcie_generation`, `stock_status`
+  (unstable naming, high cardinality, or simple enums without metadata)
+
+This avoids overengineering and improves queryability by keeping volatile naming inline
+while preserving stable joins for reference metadata.
+
 
 ## Canonical GPU Definitions
 
 Canonical entities describe **what a GPU is**, independently of where or how it is sold.
 
-These entities are stable, normalized, and internally controlled.
+These entities are curated and internally controlled. Normalization is applied where
+semantics are stable, with controlled text fields for volatile naming.
 
 ### GPU Chip
 
 Represents the underlying GPU silicon design.
 
 A chip defines:
-- The vendor and architecture
+- The vendor and architecture (normalized references)
 - Compute and acceleration capabilities
-- Power and interface characteristics
+- Power and interface characteristics, including PCIe generation
 
 A chip is the common base for multiple commercial GPU variants.
+Product identity fields such as brand_series and code_name remain controlled text to avoid
+normalizing unstable naming.
 
 ---
 
@@ -126,6 +167,7 @@ Memory is modeled separately to:
 - Avoid duplication across variants
 - Keep chip definitions focused on compute capabilities
 
+Memory type is normalized via `gpu_memory_type` to reuse stable standards metadata.
 Each chip has exactly one memory configuration.
 
 ---
@@ -148,15 +190,18 @@ Each chip has exactly one feature set.
 
 ### GPU Variant
 
-Represents a commercial, physical GPU product derived from a chip.
+`gpu_variant` is a Silver entity that represents a stable physical/commercial configuration
+derived from a chip. It is not a retailer SKU and not a market offer.
 
 A variant captures:
-- Board partner customization
-- Physical dimensions
-- Cooling and power characteristics
+- AIB manufacturer and model suffix
+- Factory boost/OC and power connectors
+- Physical dimensions and cooling characteristics
 
 Multiple variants can be derived from the same chip.
 Variants are the atomic unit used for market comparison.
+They are created on-demand when processing Bronze market observations using deterministic
+resolution logic and are not seed-initialized.
 
 ---
 
@@ -169,7 +214,8 @@ This data is inherently unstable and is therefore modeled as immutable events.
 ### Market Observation
 
 A market observation represents a single point-in-time snapshot of how a GPU variant
-appears on an external retailer.
+appears on an external retailer. Each observation is an immutable point-in-time fact
+and always references an existing `gpu_variant`.
 
 An observation captures:
 - The retailer context
@@ -187,6 +233,22 @@ Current state is always derived downstream.
 
 ---
 
+## Seeding Policy
+
+Seed-initialized entities:
+- `gpu_vendor`
+- `gpu_architecture`
+- `gpu_memory_type`
+
+Not seed-initialized:
+- `gpu_variant`
+- `gpu_market_observation`
+
+Rationale: reference entities exist independently of the market, while variants and
+observations only exist because the market materializes them.
+
+---
+
 ## Relationships and Data Flow
 
 The Silver model enforces a one-way dependency flow:
@@ -194,6 +256,9 @@ The Silver model enforces a one-way dependency flow:
 - Chips define the technical base
 - Variants define sellable products
 - Observations describe market behavior over time
+
+End-to-end flow:
+Bronze (raw offers) -> Silver (canonical chips, derived variants, observations) -> Gold (aggregates)
 
 No Silver entity depends on Gold logic or derived state.
 
@@ -206,8 +271,9 @@ The GPU Silver model follows these principles:
 - **Historical truth over convenience**  
   External data is never overwritten.
 
-- **Normalization of stable concepts**  
-  Chips, features, and variants are controlled internally.
+- **Selective normalization for stable semantics**  
+  Low-cardinality reference tables are normalized; volatile naming stays in controlled
+  text fields for direct filtering.
 
 - **Event-based modeling for unstable data**  
   Market data is treated as a stream of observations.
