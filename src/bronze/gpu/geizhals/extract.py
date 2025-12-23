@@ -70,14 +70,16 @@ def write_bronze_discovery_output(
 
 if __name__ == "__main__":
     # INPUT
-    CATEGORY_HTML = Path("data/bronze/geizhals/gpu/2025-12-22/_cat=gra16_512.html")
+    CATEGORY_HTML = Path(
+        "data/bronze/gpu/marketplace/geizhals/2025-12-22/_cat=gra16_512.html"
+    )
     CATEGORY_URL = "https://geizhals.de/?cat=gra16_512"
-    BRONZE_DIR = Path("data/bronze/geizhals/gpu/2025-12-22")
+    BRONZE_DIR = Path("data/bronze/gpu/marketplace/geizhals/2025-12-22")
 
     CATEGORY_URL = "https://geizhals.de/?cat=gra16_512"
 
     # OUTPUT
-    BRONZE_DIR = Path("data/bronze/geizhals/gpu/discovery")
+    BRONZE_DIR = Path("data/bronze/gpu/marketplace/geizhals/discovery")
 
     product_urls = extract_product_urls_from_category_html(CATEGORY_HTML)
     out_file = write_bronze_discovery_output(product_urls, CATEGORY_URL, BRONZE_DIR)

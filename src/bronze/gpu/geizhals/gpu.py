@@ -121,7 +121,7 @@ if __name__ == "__main__":
         "https://geizhals.de/?cat=gra16_512",
     ]
 
-    out_dir = Path("data/bronze/geizhals/gpu")
+    out_dir = Path("data/bronze/gpu/marketplace/geizhals")
     res = fetch_product_pages_to_bronze(urls, out_dir)
 
     print(f"Fetched: {len(res)} pages")

@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 BASE_URL = "https://geizhals.de/"
 CATEGORY = "gra16_512"
 LISTING_URL_TEMPLATE = "https://geizhals.de/?cat=gra16_512&pg={page}"
-OUTPUT_ROOT = Path("data/bronze/geizhals/gpu/runs")
+OUTPUT_ROOT = Path("data/bronze/gpu/marketplace/geizhals/runs")
 
 HEADERS = {
     "User-Agent": (
