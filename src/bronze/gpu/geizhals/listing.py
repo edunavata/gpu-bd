@@ -19,10 +19,15 @@ LISTING_URL_TEMPLATE = "https://geizhals.de/?cat=gra16_512&pg={page}"
 OUTPUT_ROOT = Path("data/bronze/geizhals/gpu/runs")
 
 HEADERS = {
-    "User-Agent": "pcbuilder-research/0.1 (contact: your-email@example.com)",
+    "User-Agent": (
+        "Mozilla/5.0 (X11; Linux x86_64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    ),
     "Accept": "text/html,application/xhtml+xml",
-    "Accept-Language": "de,en;q=0.8",
+    "Accept-Language": "de-DE,de;q=0.9,en;q=0.8",
 }
+
 
 PRICE_CLEAN_RE = re.compile(r"[^\d,\.]")
 
