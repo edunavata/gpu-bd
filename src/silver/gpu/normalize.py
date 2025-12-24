@@ -103,6 +103,8 @@ _AIB_MANUFACTURER_ALIASES: dict[str, tuple[str, ...]] = {
     "INTEL": ("INTEL",),
 }
 
+_MODEL_TOKEN_RE = re.compile(r"\b(nvidia|amd|geforce|radeon|rtx|rx)\b")
+
 
 def _compile_alias_pattern(alias: str) -> re.Pattern[str]:
     """Compile a word-boundary regex for a multi-token alias.
@@ -139,6 +141,18 @@ def _clean_text(text: str) -> str:
     upper = text.upper()
     cleaned = _CLEAN_RE.sub(" ", upper)
     return _WS_RE.sub(" ", cleaned).strip()
+
+
+def canonical_model_key(value: Optional[str]) -> str:
+    """Normalize a GPU model string into a canonical key."""
+
+    if not value:
+        return ""
+    text = value.lower()
+    text = _MODEL_TOKEN_RE.sub(" ", text)
+    text = re.sub(r"(?<=\d)(?=[a-z])|(?<=[a-z])(?=\d)", " ", text)
+    text = _WS_RE.sub(" ", text)
+    return text.strip()
 
 
 def _extract_vram_gb(text: str) -> Optional[int]:
@@ -423,7 +437,7 @@ def _demo() -> None:
     samples = [
         {
             "product_name_raw": (
-                "MSI GeForce RTX 5090 32G Gaming Trio OC, G5090-32GTC, 32GB GDDR7, HDMI, 3x DP"
+                "INNO3D GeForce RTX 5080 iCHILL Frostbite Pro, 16GB GDDR7, HDMI, 3x DP"
             )
         },
     ]
