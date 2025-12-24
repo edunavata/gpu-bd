@@ -21,8 +21,9 @@ CREATE TABLE IF NOT EXISTS gpu_market_observation (
     
     -- Observed market facts
     price_eur REAL NOT NULL CHECK (price_eur > 0),
-    -- Constrain stock status to a stable, comparable vocabulary.
-    stock_status TEXT NOT NULL CHECK (
+    -- Constrain stock status to a stable, comparable vocabulary. NULL if unknown.
+    stock_status TEXT CHECK (
+        stock_status IS NULL OR 
         stock_status IN (
             'in_stock',
             'low_stock',
