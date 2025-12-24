@@ -423,14 +423,7 @@ def _demo() -> None:
     samples = [
         {
             "product_name_raw": (
-                "ASUS Prime GeForce RTX 5070 Ti OC, PRIME-RTX5070TI-O16G, "
-                "16GB GDDR7, HDMI, 3x DP"
-            )
-        },
-        {
-            "product_name_raw": (
-                "GIGABYTE AORUS Radeon RX 9070 XT Elite 16G, "
-                "16GB GDDR6, 2x HDMI, 2x DP"
+                "MSI GeForce RTX 5090 32G Gaming Trio OC, G5090-32GTC, 32GB GDDR7, HDMI, 3x DP"
             )
         },
     ]
