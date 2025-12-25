@@ -65,11 +65,11 @@ python -m src.pipelines.silver_gpu_pipeline --db-path db/pcbuilder.db
 - `/src/pipelines/`: Orchestration of the Bronze and Silver layers.
 - `/db/`: SQL schemas and local database.
 
-## 📊 Análisis y Casos de Uso (Data Insights)
-Una vez procesados los datos a través de las capas Bronze y Silver, la capa Gold permite realizar análisis avanzados para la toma de decisiones. Aquí algunos ejemplos de lo que puedes extraer de la base de datos:
+## 📊 Analysis and Use Cases (Data Insights)
+Once data has been processed through the Bronze and Silver layers, the Gold layer enables advanced analysis for decision-making. Here are some examples of what you can extract from the database:
 
-### 💰 1. Mejor relación Potencia/Precio por Segmento
-Esta consulta identifica las GPUs líderes en eficiencia económica (rendimiento por euro invertido), categorizadas por el presupuesto del usuario.
+### 💰 1. Best Power/Price Ratio by Segment
+This query identifies the leading GPUs in economic efficiency (performance per euro invested), categorized by user budget.
 
 ```sql
 WITH MarketSegments AS (
@@ -88,7 +88,7 @@ FROM MarketSegments
 WHERE rank <= 3;
 ```
 
-#### 🏆 Top Picks por Presupuesto
+#### 🏆 Top Picks by Budget
 
 | Segmento | Modelo | Precio | Score Eficiencia |
 | --- | --- | --- | --- |
@@ -96,8 +96,8 @@ WHERE rank <= 3;
 | Mid-Range | GeForce RTX 5070 | 519.00€ | 297.14 |
 | High-End | GeForce RTX 5080 | 1029.00€ | 273.76 |
 
-### 🤖 2. Eficiencia VRAM para Inteligencia Artificial
-Para cargas de trabajo de IA, la cantidad de VRAM disponible por cada vatio consumido (TDP) es crítica. Esta consulta cruza datos técnicos del chip con métricas de mercado.
+### 🤖 2. VRAM Efficiency for Artificial Intelligence
+For AI workloads, the amount of VRAM available per watt consumed (TDP) is critical. This query cross-references chip technical data with market metrics.
 
 ```sql
 SELECT 
@@ -111,16 +111,16 @@ WHERE ai.vram_gb >= 16
 ORDER BY vram_mb_per_watt DESC LIMIT 5;
 ```
 
-#### 🔋 Eficiencia Energética en IA
+#### 🔋 Energy Efficiency in AI
 
-| Modelo | VRAM | TDP | MB de VRAM por Vatio |
+| Model | VRAM | TDP | MB of VRAM per Watt |
 | --- | --- | --- | --- |
 | RTX 5060 Ti 16GB | 16 GB | 145W | 112.99 |
 | RTX 4070 Ti Super | 16 GB | 200W | 81.92 |
 | Radeon RX 7900 XTX | 24 GB | 315W | 78.02 |
 | Radeon RX 9070 XT | 16 GB | 230W | 71.23 |
 
-Nota: Los datos mostrados son ejemplos generados durante el PoC para demostrar la estructura del modelo.
+Note: The data shown are examples generated during the PoC to demonstrate the model structure.
 
 ## License & Disclaimer
 This project is licensed under the Apache License 2.0. 
