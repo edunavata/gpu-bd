@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "dc1a3efc0baeb9d04c6d693a9618a442af340e7e606600490c7ced4db4322df0",
+  "normalized_name": "asus_tuf_nvidia_rtx5080_16gb_oc",
+  "product_url": "https://geizhals.de/asus-tuf-gaming-geforce-rtx-5080-oc-90yv0m30-m0na00-a3382457.html",
+  "first_seen_at": "2025-12-23T00:44:34Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=2.products.json#24"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/dc1a3efc0baeb9d04c6d693a9618a442af340e7e606600490c7ced4db4322df0.json"
+  ]
+}

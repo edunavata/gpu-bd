@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "599a4b2760a8266e90602eb9bb00fd9a2c1d91b7136fa31ab744796c5ca87505",
+  "normalized_name": "asus_dual_nvidia_rtx5060ti_16gb_oc",
+  "product_url": "https://geizhals.de/asus-dual-geforce-rtx-5060-ti-oc-90yv0mh0-m0na00-a3472689.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#11"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/599a4b2760a8266e90602eb9bb00fd9a2c1d91b7136fa31ab744796c5ca87505.json"
+  ]
+}

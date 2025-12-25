@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "a5af7da532af938e7e06f62507437c1a83d012abe9540a890d131043723a403f",
+  "normalized_name": "asus_noctuaoc_nvidia_rtx5080_16gb_oc",
+  "product_url": "https://geizhals.de/asus-geforce-rtx-5080-noctua-oc-edition-90yv0lx0-m0na00-a3503515.html",
+  "first_seen_at": "2025-12-23T00:44:35Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=3.products.json#2"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/a5af7da532af938e7e06f62507437c1a83d012abe9540a890d131043723a403f.json"
+  ]
+}

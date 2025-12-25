@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "a590a477aef9373fad2673b7ceaf5f7c82260448768d3ce312bcbfca95009f38",
+  "normalized_name": "nvidia_96gb",
+  "product_url": "https://geizhals.de/nvidia-rtx-pro-6000-blackwell-workstation-edition-900-5g144-2200-000-a3474510.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#23"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/a590a477aef9373fad2673b7ceaf5f7c82260448768d3ce312bcbfca95009f38.json"
+  ]
+}

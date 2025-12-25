@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "f4358e7c56e8e0555f4062495eed403877259471231311c3a6d93adde079197c",
+  "normalized_name": "zotacgaming_ampextremeinfinity_nvidia_rtx5080_16gb",
+  "product_url": "https://geizhals.de/zotac-gaming-geforce-rtx-5080-amp-extreme-infinity-zt-b50800b-10p-a3382479.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#8"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/f4358e7c56e8e0555f4062495eed403877259471231311c3a6d93adde079197c.json"
+  ]
+}

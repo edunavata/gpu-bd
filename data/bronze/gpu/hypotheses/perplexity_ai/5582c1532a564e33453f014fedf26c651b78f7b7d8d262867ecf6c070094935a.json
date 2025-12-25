@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-25T02:09:14Z",
+  "input": {
+    "model_name": "ASUS Prime Radeon RX 9060 XT OC, PRIME-RX9060XT-O8G, 8GB GDDR6, HDMI, 2x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "ASUS",
+    "aib_model_suffix": "Prime",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": "Radeon Rx 9060 Xt",
+    "vram_gb": null,
+    "is_oc": true,
+    "factory_boost_mhz": 3330,
+    "part_number": null,
+    "length_mm": 304,
+    "width_slots": 2.5,
+    "height_mm": 126,
+    "power_connectors": "1 x 8-pin",
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 2,
+    "displayport_version": "2.1a",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": 3
+  },
+  "evidence": {
+    "source_url": "https://www.asus.com/br/motherboards-components/graphics-cards/prime/prime-rx9060xt-o8g/techspec/",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"ASUS\",\n  \"model_suffix\": \"Prime\",\n  \"factory_boost_mhz\": 3330,\n  \"part_number\": null,\n  \"length_mm\": 304,\n  \"width_slots\": 2.5,\n  \"height_mm\": 126,\n  \"power_connectors\": \"1 x 8-pin\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 3,\n  \"displayport_count\": 2,\n  \"displayport_version\": \"2.1a\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": 3\n}\n```"
+  }
+}

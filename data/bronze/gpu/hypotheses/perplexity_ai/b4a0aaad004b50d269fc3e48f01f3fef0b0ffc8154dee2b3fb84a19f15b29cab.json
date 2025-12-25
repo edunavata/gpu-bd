@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:48:55Z",
+  "input": {
+    "model_name": "ASRock Radeon RX 9070 XT Taichi 16GB OC, RX9070XT TC 16GO, 16GB GDDR6, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "ASRock",
+    "aib_model_suffix": "Taichi",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": "Radeon Rx 9070 Xt",
+    "vram_gb": 16,
+    "is_oc": true,
+    "factory_boost_mhz": 3100,
+    "part_number": null,
+    "length_mm": 330,
+    "width_slots": 3,
+    "height_mm": null,
+    "power_connectors": null,
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 3,
+    "displayport_version": "2.1a",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": 3
+  },
+  "evidence": {
+    "source_url": "https://www.asrock.com/Graphics-Card/AMD/Radeon%20RX%209070%20XT%20Taichi%2016GB%20OC/index.asp",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"ASRock\",\n  \"model_suffix\": \"Taichi\",\n  \"factory_boost_mhz\": 3100,\n  \"part_number\": null,\n  \"length_mm\": 330,\n  \"width_slots\": 3,\n  \"height_mm\": null,\n  \"power_connectors\": null,\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 3,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"2.1a\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": 3\n}\n```"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "7655bfb44277c7ab2f92ad463535af0d946506b43898f7b921e8350e80ab31cd",
+  "normalized_name": "acer_nitro_12gb_oc",
+  "product_url": "https://geizhals.de/acer-nitro-arc-b580-oc-an-b580-oca-a3369943.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#28"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/7655bfb44277c7ab2f92ad463535af0d946506b43898f7b921e8350e80ab31cd.json"
+  ]
+}

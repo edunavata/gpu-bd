@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "dae518649ded97ef39a09714ad1f58e5d32e37df84da3ce22aa0aabd1a2d3408",
+  "normalized_name": "asus_dual_amd_radeonrx9060xt_16gb",
+  "product_url": "https://geizhals.de/asus-dual-radeon-rx-9060-xt-90yv0lg2-m0na00-a3565048.html",
+  "first_seen_at": "2025-12-23T00:44:35Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=3.products.json#10"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/dae518649ded97ef39a09714ad1f58e5d32e37df84da3ce22aa0aabd1a2d3408.json"
+  ]
+}

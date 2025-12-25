@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:49:14Z",
+  "input": {
+    "model_name": "Palit GeForce RTX 5070 Ti GamingPro-S, 16GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "Palit",
+    "aib_model_suffix": "GamingPro-S",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5070 Ti",
+    "vram_gb": 16,
+    "is_oc": false,
+    "factory_boost_mhz": 2452,
+    "part_number": "NE7507T019T2-GB2031U",
+    "length_mm": 331.9,
+    "width_slots": 2.5,
+    "height_mm": 49.7,
+    "power_connectors": "16-pin x1",
+    "cooling_type": "Air",
+    "fan_count": null,
+    "displayport_count": 3,
+    "displayport_version": "DP2.1b",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.palit.com/palit/vgapro.php?id=5605&lang=en",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"Palit\",\n  \"model_suffix\": \"GamingPro-S\",\n  \"factory_boost_mhz\": 2452,\n  \"part_number\": \"NE7507T019T2-GB2031U\",\n  \"length_mm\": 331.9,\n  \"width_slots\": 2.5,\n  \"height_mm\": 49.7,\n  \"power_connectors\": \"16-pin x1\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": null,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"DP2.1b\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": null\n}\n```"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "675514f7e2748c61ae08e2a29d45241d981f8d9df0f80083014e0597bf455ac6",
+  "normalized_name": "asus_tufgaming_nvidia_rtx5070ti_16gb_oc",
+  "product_url": "https://geizhals.de/asus-tuf-gaming-geforce-rtx-5070-ti-btf-white-oc-edition-90yv0n60-m0na00-a3535102.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#5"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/675514f7e2748c61ae08e2a29d45241d981f8d9df0f80083014e0597bf455ac6.json"
+  ]
+}

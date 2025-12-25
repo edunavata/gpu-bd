@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "340cdf6e11035c6a267b50cdf872e12cab5a52a5198ef80ed768ea156aa93b97",
+  "normalized_name": "gigabyte_aoruselite_amd_radeonrx9070xt_16gb",
+  "product_url": "https://geizhals.de/gigabyte-aorus-radeon-rx-9070-xt-elite-gv-r9070xtaorus-e-a3382484.html",
+  "first_seen_at": "2025-12-23T00:44:35Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=3.products.json#0"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/340cdf6e11035c6a267b50cdf872e12cab5a52a5198ef80ed768ea156aa93b97.json"
+  ]
+}

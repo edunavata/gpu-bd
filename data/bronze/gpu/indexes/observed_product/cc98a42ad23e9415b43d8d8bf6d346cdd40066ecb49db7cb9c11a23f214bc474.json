@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "cc98a42ad23e9415b43d8d8bf6d346cdd40066ecb49db7cb9c11a23f214bc474",
+  "normalized_name": "msi_expertoc_nvidia_rtx5070ti_16gb_oc",
+  "product_url": "https://geizhals.de/msi-geforce-rtx-5070-ti-16g-expert-oc-a3557312.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#6"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/cc98a42ad23e9415b43d8d8bf6d346cdd40066ecb49db7cb9c11a23f214bc474.json"
+  ]
+}

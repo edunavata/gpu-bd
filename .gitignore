@@ -30,15 +30,23 @@ coverage.xml
 # ------------------------------------------------------------
 # Generated data artifacts
 # ------------------------------------------------------------
-# Raw / intermediate / derived data should not be committed
-data/bronze/**
-data/silver/**
-data/gold/**
+# Ignora el contenido de las capas de datos
+data/bronze/*
+data/silver/*
+data/gold/*
 
-# Keep directory structure
-!data/bronze/.gitkeep
-!data/silver/.gitkeep
-!data/gold/.gitkeep
+# EXCEPCIÓN: Permitir carpetas (necesario para profundizar)
+!data/bronze/**/
+!data/silver/**/
+!data/gold/**/
+
+# EXCEPCIÓN: Permitir archivos JSON
+!data/bronze/**/*.json
+!data/silver/**/*.json
+!data/gold/**/*.json
+
+# BLOQUEO TOTAL de cualquier HTML en todo el proyecto
+*.html
 
 # ------------------------------------------------------------
 # OS / Editor

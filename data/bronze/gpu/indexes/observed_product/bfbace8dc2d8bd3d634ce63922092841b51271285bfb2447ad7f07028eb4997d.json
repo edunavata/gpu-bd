@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "bfbace8dc2d8bd3d634ce63922092841b51271285bfb2447ad7f07028eb4997d",
+  "normalized_name": "pny_overclockedtriplefan_nvidia_rtx5080_16gb_oc",
+  "product_url": "https://geizhals.de/pny-geforce-rtx-5080-overclocked-triple-fan-vcg508016tfxpb1-o-a3395459.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#27"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/bfbace8dc2d8bd3d634ce63922092841b51271285bfb2447ad7f07028eb4997d.json"
+  ]
+}

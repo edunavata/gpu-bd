@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "1733200049c8ec5099a137482d10caf6355fc4e5f4352135dcfd80cff1c5e6ed",
+  "normalized_name": "xfx_mercuryocgamingeditionwithrgb_amd_radeonrx9070xt_16gb",
+  "product_url": "https://geizhals.de/xfx-mercury-radeon-rx-9070-xt-gaming-edition-rx-97tmercb9-a3430425.html",
+  "first_seen_at": "2025-12-25T02:07:20Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-25T02-07-19Z/page_pg=7.products.json#23"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/1733200049c8ec5099a137482d10caf6355fc4e5f4352135dcfd80cff1c5e6ed.json"
+  ]
+}

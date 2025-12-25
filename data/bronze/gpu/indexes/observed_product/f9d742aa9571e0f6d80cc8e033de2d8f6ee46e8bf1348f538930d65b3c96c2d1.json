@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "f9d742aa9571e0f6d80cc8e033de2d8f6ee46e8bf1348f538930d65b3c96c2d1",
+  "normalized_name": "msi_gamingtriooc_nvidia_rtx5070_12gb_oc",
+  "product_url": "https://geizhals.de/msi-geforce-rtx-5070-12g-gaming-trio-oc-a3382255.html",
+  "first_seen_at": "2025-12-23T00:44:35Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=3.products.json#25"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/f9d742aa9571e0f6d80cc8e033de2d8f6ee46e8bf1348f538930d65b3c96c2d1.json"
+  ]
+}

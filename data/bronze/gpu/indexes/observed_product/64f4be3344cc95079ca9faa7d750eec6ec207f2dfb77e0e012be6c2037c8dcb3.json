@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "64f4be3344cc95079ca9faa7d750eec6ec207f2dfb77e0e012be6c2037c8dcb3",
+  "normalized_name": "gigabyte_windforcemaxoc_nvidia_rtx5060ti_16gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-geforce-rtx-5060-ti-windforce-max-oc-16g-gv-n506twf2max-oc-16gd-a3525093.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#20"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/64f4be3344cc95079ca9faa7d750eec6ec207f2dfb77e0e012be6c2037c8dcb3.json"
+  ]
+}

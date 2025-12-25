@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:50:00Z",
+  "input": {
+    "model_name": "ASUS Dual Radeon RX 9060 XT, DUAL-RX9060XT-16G, 16GB GDDR6, HDMI, 2x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "ASUS",
+    "aib_model_suffix": "Dual",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": "Radeon Rx 9060 Xt",
+    "vram_gb": 16,
+    "is_oc": false,
+    "factory_boost_mhz": 3230,
+    "part_number": "DUAL-RX9060XT-16G",
+    "length_mm": 202,
+    "width_slots": 2.5,
+    "height_mm": 49,
+    "power_connectors": "1 x 8-pin",
+    "cooling_type": "Air",
+    "fan_count": 2,
+    "displayport_count": 2,
+    "displayport_version": "DisplayPort 2.1a",
+    "hdmi_count": 1,
+    "hdmi_version": "HDMI 2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.asus.com/motherboards-components/graphics-cards/dual/dual-rx9060xt-16g/techspec/",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "{\n  \"aib_manufacturer\": \"ASUS\",\n  \"model_suffix\": \"Dual\",\n  \"factory_boost_mhz\": 3230,\n  \"part_number\": \"DUAL-RX9060XT-16G\",\n  \"length_mm\": 202,\n  \"width_slots\": 2.5,\n  \"height_mm\": 49,\n  \"power_connectors\": \"1 x 8-pin\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 2,\n  \"displayport_count\": 2,\n  \"displayport_version\": \"DisplayPort 2.1a\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"HDMI 2.1b\",\n  \"warranty_years\": null\n}"
+  }
+}

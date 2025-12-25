@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:51:07Z",
+  "input": {
+    "model_name": "PowerColor Red Devil Spectral White Radeon RX 9070 XT, 16GB GDDR6, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "PowerColor",
+    "aib_model_suffix": "Red Devil Spectral White",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": "Radeon Rx 9070 Xt",
+    "vram_gb": 16,
+    "is_oc": false,
+    "factory_boost_mhz": 3060,
+    "part_number": null,
+    "length_mm": 340,
+    "width_slots": null,
+    "height_mm": 69,
+    "power_connectors": "Three 8-pin PCI Express",
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 3,
+    "displayport_version": "2.1a",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1",
+    "warranty_years": 2
+  },
+  "evidence": {
+    "source_url": "https://www.powercolor.com/product-detail231.htm",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"PowerColor\",\n  \"model_suffix\": \"Red Devil Spectral White\",\n  \"factory_boost_mhz\": 3060,\n  \"part_number\": null,\n  \"length_mm\": 340,\n  \"width_slots\": null,\n  \"height_mm\": 69,\n  \"power_connectors\": \"Three 8-pin PCI Express\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 3,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"2.1a\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1\",\n  \"warranty_years\": 2\n}\n```"
+  }
+}

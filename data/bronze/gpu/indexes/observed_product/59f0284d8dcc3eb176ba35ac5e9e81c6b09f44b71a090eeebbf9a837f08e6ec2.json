@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "59f0284d8dcc3eb176ba35ac5e9e81c6b09f44b71a090eeebbf9a837f08e6ec2",
+  "normalized_name": "nitro_amd_radeonrx9060xt_16gb_oc",
+  "product_url": "https://geizhals.de/acer-nitro-radeon-rx-9060-xt-oc-a3498545.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#24"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/59f0284d8dcc3eb176ba35ac5e9e81c6b09f44b71a090eeebbf9a837f08e6ec2.json"
+  ]
+}

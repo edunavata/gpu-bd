@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "5fd9953b9f2a5f590afa53b62d942c55c5c44b10c64f56b78d8d1c94ae9fd2a9",
+  "normalized_name": "asus_prime_amd_16gb_oc",
+  "product_url": "https://geizhals.de/asus-prime-radeon-rx-9070-oc-a3430253.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#12"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/5fd9953b9f2a5f590afa53b62d942c55c5c44b10c64f56b78d8d1c94ae9fd2a9.json"
+  ]
+}
