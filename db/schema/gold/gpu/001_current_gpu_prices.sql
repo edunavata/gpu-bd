@@ -1,37 +1,40 @@
--- ============================================================
--- GOLD LAYER
--- Purpose: Current price snapshot per GPU variant and retailer.
--- Data characteristics: Derived view over immutable observations; recalculates on query.
--- Row meaning: One row per variant and retailer representing the latest observation.
--- ============================================================
+-- db/schema/gold/gpu/001_current_gpu_prices.sql
 
--- Selects the most recent observation for each variant/retailer pair.
+-- ============================================================================
+-- GOLD LAYER: Current GPU Prices
+-- Propósito: Obtener el último precio y estado de stock conocido por Variante y Retailer.
+-- Lógica: Deduplicación basada en tiempo (Latest by Partition).
+-- ============================================================================
+
 CREATE VIEW IF NOT EXISTS current_gpu_prices AS
-WITH ranked AS (
-    -- Rank observations to keep the latest snapshot per retailer.
-    SELECT
+WITH ranked_observations AS (
+    SELECT 
         observation_id,
         variant_id,
         retailer,
         sku,
-        product_url,
         price_eur,
         stock_status,
+        product_url,
         observed_at,
+        scrape_run_id,
+        -- Numeramos las observaciones por variante/retailer, de más reciente a más antigua
         ROW_NUMBER() OVER (
-            PARTITION BY variant_id, retailer
+            PARTITION BY variant_id, retailer 
             ORDER BY observed_at DESC
-        ) AS rn
+        ) as rn
     FROM gpu_market_observation
 )
-SELECT
-    observation_id,
-    variant_id,
-    retailer,
-    sku,
-    product_url,
-    price_eur,
-    stock_status,
-    observed_at
-FROM ranked
-WHERE rn = 1;
+SELECT 
+    obs.variant_id,
+    v.chip_id,
+    obs.retailer,
+    obs.price_eur,
+    obs.stock_status,
+    obs.product_url,
+    obs.observed_at as last_seen_at,
+    v.aib_manufacturer,
+    v.model_suffix
+FROM ranked_observations obs
+JOIN gpu_variant v ON obs.variant_id = v.variant_id
+WHERE obs.rn = 1;
