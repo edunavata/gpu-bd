@@ -13,9 +13,7 @@ CREATE TABLE IF NOT EXISTS gpu_market_observation (
     variant_id TEXT NOT NULL,
     
     -- Constrain retailer domain to stabilize downstream dimensions.
-    retailer TEXT NOT NULL CHECK (
-        retailer IN ('pccomponentes', 'amazon', 'coolmod', 'alternate')
-    ),
+    retailer TEXT NOT NULL,
     sku TEXT,                          -- External retailer SKU
     product_url TEXT NOT NULL,         -- External retailer product URL
     
