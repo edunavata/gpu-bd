@@ -23,15 +23,7 @@ publish, change, or remove product listings over time.
 
 ```mermaid
 %%{init: {
-  "theme": "default",
-  "themeVariables": {
-    "primaryColor": "#141414ff",
-    "primaryTextColor": "#000000",
-    "primaryBorderColor": "#333333",
-    "lineColor": "#333333",
-    "secondaryColor": "#f5f5f5",
-    "tertiaryColor": "#ffffff"
-  }
+  "theme": "dark",
 }}%%
 erDiagram
     gpu_vendor ||--o{ gpu_architecture : defines
