@@ -1,0 +1,30 @@
+Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   Copyright 2024 edunavata
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+   ---
+
+   ADDITIONAL DISCLAIMER:
+   This project is a Proof of Concept (PoC) for educational and personal 
+   testing purposes only. The automated data collection (scraping) scripts 
+   provided in this repository are designed with intentional delays to be 
+   respectful of the target's infrastructure. 
+
+   The author is not responsible for any misuse of this software, nor for 
+   any violations of third-party Terms of Service. Users are solely 
+   responsible for ensuring their activities comply with local laws and 
+   the robots.txt policies of the target websites.
