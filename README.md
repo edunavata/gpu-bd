@@ -65,6 +65,67 @@ python -m src.pipelines.silver_gpu_pipeline --db-path db/pcbuilder.db
 - `/src/pipelines/`: Orchestration of the Bronze and Silver layers.
 - `/db/`: SQL schemas and local database.
 
+
+## Pipeline Diagram
+```mermaid
+graph TD
+    %% External Sources
+    subgraph External [External Sources]
+        GZ[Geizhals Marketplace]
+        PX[Perplexity AI / Specs]
+    end
+
+    %% Bronze Layer
+    subgraph Bronze [Bronze Layer: Ingestion & Enrichment]
+        direction TB
+        
+        %% Phase 1: Ingest
+        Scraper[Marketplace Scraper]
+        B_Mkt[(Bronze: Raw Marketplace<br/>Observations / Runs)]
+        
+        %% Phase 2: Enrichment logic
+        URL_Check{URL indexed in<br/>Hypotheses?}
+        LLM_Inference[LLM Engine<br/>Normalization & Specs]
+        
+        subgraph Bronze_Metadata [Metadata & Evidence]
+            B_Idx[(Product URL<br/>Index)]
+            B_Hyp[(LLM Hypotheses)]
+        end
+
+        GZ --> Scraper
+        Scraper --> B_Mkt
+        B_Mkt --> URL_Check
+        
+        URL_Check -- "No (New Product)" --> LLM_Inference
+        LLM_Inference <--> PX
+        LLM_Inference --> B_Hyp
+        LLM_Inference --> B_Idx
+        
+        URL_Check -- "Yes (Skip LLM)" --> S_Pipe
+    end
+
+    %% Silver Layer
+    subgraph Silver [Silver Layer: Canonical Model]
+        direction TB
+        S_Pipe[Silver Pipeline]
+        S_Mapping[Deterministic Mapping<br/>& Validation]
+        S_DB[(Silver DB:<br/>Validated Entities)]
+
+        B_Hyp --> S_Pipe
+        S_Pipe --> S_Mapping
+        S_Mapping --> S_DB
+    end
+
+    %% Styles optimized for GitHub (Light/Dark Mode)
+    style LLM_Inference fill:#7b1fa2,color:#fff,stroke:#4a148c,stroke-width:2px
+    style URL_Check fill:#fbc02d,color:#000,stroke:#f9a825,stroke-width:2px
+    style Bronze fill:transparent,stroke:#e65100,stroke-width:2px,stroke-dasharray: 5 5
+    style Silver fill:transparent,stroke:#0277bd,stroke-width:2px,stroke-dasharray: 5 5
+    style B_Mkt fill:#fff3e0,color:#000,stroke:#ff9800
+    style S_DB fill:#e1f5fe,color:#000,stroke:#03a9f4
+    style Bronze_Metadata fill:#fafafa,stroke:#999,stroke-dasharray: 2 2
+```
+
 ## Analysis and Use Cases (Data Insights)
 Once data has been processed through the Bronze and Silver layers, the Gold layer enables advanced analysis for decision-making. Here are some examples of what you can extract from the database:
 
