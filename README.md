@@ -1,4 +1,4 @@
-# PcBuilder PoC: LLM-Powered Data Structuring
+# GPU BD PoC: LLM-Powered Data Structuring
 
 PcBuilder is a Proof of Concept (PoC) designed to demonstrate how to transform chaotic, unstructured hardware data into a clean, enriched, and actionable data model using LLMs and a modern data architecture.
 
