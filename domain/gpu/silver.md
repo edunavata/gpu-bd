@@ -23,18 +23,14 @@ publish, change, or remove product listings over time.
 
 ```mermaid
 %%{init: {
-  "theme": "base",
+  "theme": "default",
   "themeVariables": {
-    "background": "#ffffff",
-    "primaryColor": "#f7f7f7",
-    "primaryTextColor": "#111111",
-    "primaryBorderColor": "#2f2f2f",
-    "lineColor": "#444444",
-    "secondaryColor": "#efefef",
-    "tertiaryColor": "#ffffff",
-    "edgeLabelBackground": "#ffffff",
-    "fontFamily": "Verdana, Arial, sans-serif",
-    "fontSize": "14px"
+    "primaryColor": "#141414ff",
+    "primaryTextColor": "#000000",
+    "primaryBorderColor": "#333333",
+    "lineColor": "#333333",
+    "secondaryColor": "#f5f5f5",
+    "tertiaryColor": "#ffffff"
   }
 }}%%
 erDiagram
