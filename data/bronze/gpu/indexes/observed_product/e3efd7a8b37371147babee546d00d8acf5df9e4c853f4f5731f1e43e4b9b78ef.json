@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "e3efd7a8b37371147babee546d00d8acf5df9e4c853f4f5731f1e43e4b9b78ef",
+  "normalized_name": "asus_prime_amd_radeonrx9060xt_16gb_oc",
+  "product_url": "https://geizhals.de/asus-prime-radeon-rx-9060-xt-oc-a3498098.html",
+  "first_seen_at": "2025-12-24T22:06:49Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-24T22-06-37Z/page_pg=4.products.json#21"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/e3efd7a8b37371147babee546d00d8acf5df9e4c853f4f5731f1e43e4b9b78ef.json"
+  ]
+}

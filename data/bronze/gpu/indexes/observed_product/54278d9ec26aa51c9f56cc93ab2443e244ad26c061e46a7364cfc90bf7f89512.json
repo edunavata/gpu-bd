@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "54278d9ec26aa51c9f56cc93ab2443e244ad26c061e46a7364cfc90bf7f89512",
+  "normalized_name": "asus_rogstrix_nvidia_rtx5070ti_16gb_oc",
+  "product_url": "https://geizhals.de/asus-rog-strix-geforce-rtx-5070-ti-oc-a3382464.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#29"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/54278d9ec26aa51c9f56cc93ab2443e244ad26c061e46a7364cfc90bf7f89512.json"
+  ]
+}

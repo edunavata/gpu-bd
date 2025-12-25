@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "bc80cd8ac0c4340877e5bccf420d02349354111493a6c32899c3445f20e36a61",
+  "normalized_name": "gainward_phantom_nvidia_rtx5090_32gb",
+  "product_url": "https://geizhals.de/gainward-geforce-rtx-5090-phantom-4878-ne75090019r5-gb2020p-a3382613.html",
+  "first_seen_at": "2025-12-23T00:44:35Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=3.products.json#18"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/bc80cd8ac0c4340877e5bccf420d02349354111493a6c32899c3445f20e36a61.json"
+  ]
+}

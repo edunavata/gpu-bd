@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:47:47Z",
+  "input": {
+    "model_name": "ASUS Prime GeForce RTX 5070 OC, PRIME-RTX5070-O12G, 12GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "ASUS",
+    "aib_model_suffix": "Prime",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5070",
+    "vram_gb": 12,
+    "is_oc": true,
+    "factory_boost_mhz": 2587,
+    "part_number": "PRIME-RTX5070-O12G",
+    "length_mm": null,
+    "width_slots": 2.5,
+    "height_mm": null,
+    "power_connectors": "1 x 16-pin",
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 3,
+    "displayport_version": "2.1b",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.asus.com/us/motherboards-components/graphics-cards/prime/prime-rtx5070-o12g/techspec/",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"ASUS\",\n  \"model_suffix\": \"Prime\",\n  \"factory_boost_mhz\": 2587,\n  \"part_number\": \"PRIME-RTX5070-O12G\",\n  \"length_mm\": null,\n  \"width_slots\": 2.5,\n  \"height_mm\": null,\n  \"power_connectors\": \"1 x 16-pin\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 3,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"2.1b\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": null\n}\n```"
+  }
+}

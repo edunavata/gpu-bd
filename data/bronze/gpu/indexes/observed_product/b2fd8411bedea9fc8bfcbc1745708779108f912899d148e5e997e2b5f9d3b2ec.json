@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "b2fd8411bedea9fc8bfcbc1745708779108f912899d148e5e997e2b5f9d3b2ec",
+  "normalized_name": "gigabyte_gamingocice_amd_radeonrx9070xt_16gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16g-gv-r907xgamingocice-16gd-a3627156.html",
+  "first_seen_at": "2025-12-23T00:44:34Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=2.products.json#10"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/b2fd8411bedea9fc8bfcbc1745708779108f912899d148e5e997e2b5f9d3b2ec.json"
+  ]
+}

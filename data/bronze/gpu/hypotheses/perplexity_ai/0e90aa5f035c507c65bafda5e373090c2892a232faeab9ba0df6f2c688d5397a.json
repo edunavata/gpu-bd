@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:51:18Z",
+  "input": {
+    "model_name": "Zotac Gaming GeForce RTX 5070 Ti Solid Core OC White Edition, 16GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "ZOTAC",
+    "aib_model_suffix": "SOLID CORE OC White Edition",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5070 Ti",
+    "vram_gb": 16,
+    "is_oc": true,
+    "factory_boost_mhz": 2482,
+    "part_number": "ZT-B50710Q2-10P",
+    "length_mm": 303.5,
+    "width_slots": 2.5,
+    "height_mm": 55.7,
+    "power_connectors": "1 x 12V-2x6",
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 3,
+    "displayport_version": "2.1b",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.newegg.com/zotac-rtx-5070-ti-solid-oc-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans/p/N82E16814500601",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "{\n  \"aib_manufacturer\": \"ZOTAC\",\n  \"model_suffix\": \"SOLID CORE OC White Edition\",\n  \"factory_boost_mhz\": 2482,\n  \"part_number\": \"ZT-B50710Q2-10P\",\n  \"length_mm\": 303.5,\n  \"width_slots\": 2.5,\n  \"height_mm\": 55.7,\n  \"power_connectors\": \"1 x 12V-2x6\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 3,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"2.1b\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": null\n}"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "22e14c4f3a37323479b77eb27327ba12a9e154533ceadcfbd504f5ee990d6034",
+  "normalized_name": "asus_prime_amd_16gb_oc",
+  "product_url": "https://geizhals.de/asus-prime-radeon-rx-9070-oc-evo-90yv0mq0-m0na00-a3564862.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#0"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/22e14c4f3a37323479b77eb27327ba12a9e154533ceadcfbd504f5ee990d6034.json"
+  ]
+}

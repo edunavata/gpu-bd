@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "2aa7b7cf347ecdae73c004413568fe0efd6fff190432b44bfc4500913b8992a6",
+  "normalized_name": "inno3d_ichillfrostbite_nvidia_rtx5090_32gb",
+  "product_url": "https://geizhals.de/inno3d-geforce-rtx-5090-ichill-frostbite-c50903-32d7x-1759fb-a3394796.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#26"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/2aa7b7cf347ecdae73c004413568fe0efd6fff190432b44bfc4500913b8992a6.json"
+  ]
+}

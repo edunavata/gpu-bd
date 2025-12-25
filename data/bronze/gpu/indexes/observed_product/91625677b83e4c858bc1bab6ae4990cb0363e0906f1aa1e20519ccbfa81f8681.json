@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "91625677b83e4c858bc1bab6ae4990cb0363e0906f1aa1e20519ccbfa81f8681",
+  "normalized_name": "inno3d_ichillfrostbite_nvidia_rtx5080_16gb",
+  "product_url": "https://geizhals.de/inno3d-geforce-rtx-5080-ichill-frostbite-pro-c50803-16d7x-1760fbp-a3612373.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#0"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/91625677b83e4c858bc1bab6ae4990cb0363e0906f1aa1e20519ccbfa81f8681.json"
+  ]
+}

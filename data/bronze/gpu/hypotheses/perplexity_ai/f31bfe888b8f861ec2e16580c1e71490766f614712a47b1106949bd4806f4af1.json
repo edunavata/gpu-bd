@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-25T02:08:44Z",
+  "input": {
+    "model_name": "Sapphire Pulse Radeon RX 9060 XT, 8GB GDDR6, 2x HDMI, DP, lite retail"
+  },
+  "extraction": {
+    "aib_manufacturer": "SAPPHIRE",
+    "aib_model_suffix": "PULSE",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": "Radeon Rx 9060 Xt",
+    "vram_gb": null,
+    "is_oc": false,
+    "factory_boost_mhz": null,
+    "part_number": null,
+    "length_mm": null,
+    "width_slots": null,
+    "height_mm": null,
+    "power_connectors": null,
+    "cooling_type": "Air",
+    "fan_count": null,
+    "displayport_count": 1,
+    "displayport_version": "2.1a",
+    "hdmi_count": 2,
+    "hdmi_version": null,
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.sapphiretech.com/en/consumer/pulse-radeon-rx-9060-xt-16g-gddr6",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "{\n  \"aib_manufacturer\": \"SAPPHIRE\",\n  \"model_suffix\": \"PULSE\",\n  \"factory_boost_mhz\": null,\n  \"part_number\": null,\n  \"length_mm\": null,\n  \"width_slots\": null,\n  \"height_mm\": null,\n  \"power_connectors\": null,\n  \"cooling_type\": \"Air\",\n  \"fan_count\": null,\n  \"displayport_count\": 1,\n  \"displayport_version\": \"2.1a\",\n  \"hdmi_count\": 2,\n  \"hdmi_version\": null,\n  \"warranty_years\": null\n}"
+  }
+}

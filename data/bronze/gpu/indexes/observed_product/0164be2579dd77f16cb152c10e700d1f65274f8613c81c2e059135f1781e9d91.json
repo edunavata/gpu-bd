@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "0164be2579dd77f16cb152c10e700d1f65274f8613c81c2e059135f1781e9d91",
+  "normalized_name": "gigabyte_windforcemaxoc_nvidia_rtx4070ti_16gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-geforce-rtx-4070-ti-super-windforce-max-oc-16g-gv-n407tswf3max-oc-16gd-a3223071.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#1"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/0164be2579dd77f16cb152c10e700d1f65274f8613c81c2e059135f1781e9d91.json"
+  ]
+}

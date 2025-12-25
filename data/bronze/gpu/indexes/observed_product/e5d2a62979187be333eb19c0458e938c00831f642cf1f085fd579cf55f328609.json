@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "e5d2a62979187be333eb19c0458e938c00831f642cf1f085fd579cf55f328609",
+  "normalized_name": "xfx_swift_amd_radeonrx9060xt_16gb_oc",
+  "product_url": "https://geizhals.de/xfx-swift-radeon-rx-9060-xt-oc-white-triple-fan-gaming-edition-rx-96ts316w7-a3509920.html",
+  "first_seen_at": "2025-12-25T02:07:20Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-25T02-07-19Z/page_pg=7.products.json#18"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/e5d2a62979187be333eb19c0458e938c00831f642cf1f085fd579cf55f328609.json"
+  ]
+}

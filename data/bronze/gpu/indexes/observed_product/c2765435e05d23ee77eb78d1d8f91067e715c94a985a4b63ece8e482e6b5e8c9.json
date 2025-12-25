@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "c2765435e05d23ee77eb78d1d8f91067e715c94a985a4b63ece8e482e6b5e8c9",
+  "normalized_name": "nvidia_24gb",
+  "product_url": "https://geizhals.de/nvidia-rtx-pro-4000-blackwell-900-5g147-2270-000-a3473421.html",
+  "first_seen_at": "2025-12-25T02:07:20Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-25T02-07-19Z/page_pg=7.products.json#10"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/c2765435e05d23ee77eb78d1d8f91067e715c94a985a4b63ece8e482e6b5e8c9.json"
+  ]
+}

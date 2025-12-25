@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-25T02:09:12Z",
+  "input": {
+    "model_name": "XFX Mercury Radeon RX 9070 XT Gaming Edition, 16GB GDDR6, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "XFX",
+    "aib_model_suffix": "Mercury OC Gaming Edition with RGB",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": "Radeon Rx 9070 Xt",
+    "vram_gb": 16,
+    "is_oc": false,
+    "factory_boost_mhz": 3100,
+    "part_number": null,
+    "length_mm": 360,
+    "width_slots": null,
+    "height_mm": 155,
+    "power_connectors": "3x 8pin PCI-E",
+    "cooling_type": "Air",
+    "fan_count": null,
+    "displayport_count": null,
+    "displayport_version": null,
+    "hdmi_count": null,
+    "hdmi_version": null,
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.xfxforce.com/shop/xfx-mercury-amd-radeon-rx-9070xt-oc-gaming-edition-with-rgb",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"XFX\",\n  \"model_suffix\": \"Mercury OC Gaming Edition with RGB\",\n  \"factory_boost_mhz\": 3100,\n  \"part_number\": null,\n  \"length_mm\": 360,\n  \"width_slots\": null,\n  \"height_mm\": 155,\n  \"power_connectors\": \"3x 8pin PCI-E\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": null,\n  \"displayport_count\": null,\n  \"displayport_version\": null,\n  \"hdmi_count\": null,\n  \"hdmi_version\": null,\n  \"warranty_years\": null\n}\n```"
+  }
+}

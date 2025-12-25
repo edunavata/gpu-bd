@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "af2dfce6a9043c197675164bf76d93035a92d9ed5fb773eda1af6eea0060a915",
+  "normalized_name": "steellegend_amd_16gb",
+  "product_url": "https://geizhals.de/asrock-radeon-rx-9070-steel-legend-16gb-a3430102.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#13"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/af2dfce6a9043c197675164bf76d93035a92d9ed5fb773eda1af6eea0060a915.json"
+  ]
+}

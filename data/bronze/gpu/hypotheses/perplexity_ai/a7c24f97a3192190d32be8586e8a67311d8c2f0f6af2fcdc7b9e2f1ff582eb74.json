@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T22:07:59Z",
+  "input": {
+    "model_name": "Zotac Gaming GeForce RTX 5090 Solid OC, 32GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "ZOTAC GAMING",
+    "aib_model_suffix": "SOLID OC",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5090",
+    "vram_gb": 32,
+    "is_oc": true,
+    "factory_boost_mhz": null,
+    "part_number": null,
+    "length_mm": 329,
+    "width_slots": 3.5,
+    "height_mm": 138,
+    "power_connectors": "1 x 12VHPWR",
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 3,
+    "displayport_version": "2.1b",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.zotac.com/us/product/graphics_card/zotac-gaming-geforce-rtx-5090-solid",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n\"aib_manufacturer\": \"ZOTAC GAMING\",\n\"model_suffix\": \"SOLID OC\",\n\"factory_boost_mhz\": null,\n\"part_number\": null,\n\"length_mm\": 329,\n\"width_slots\": 3.5,\n\"height_mm\": 138,\n\"power_connectors\": \"1 x 12VHPWR\",\n\"cooling_type\": \"Air\",\n\"fan_count\": 3,\n\"displayport_count\": 3,\n\"displayport_version\": \"2.1b\",\n\"hdmi_count\": 1,\n\"hdmi_version\": \"2.1b\",\n\"warranty_years\": null\n}\n```"
+  }
+}

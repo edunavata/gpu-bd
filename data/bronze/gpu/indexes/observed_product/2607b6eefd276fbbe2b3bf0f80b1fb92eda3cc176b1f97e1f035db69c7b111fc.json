@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "2607b6eefd276fbbe2b3bf0f80b1fb92eda3cc176b1f97e1f035db69c7b111fc",
+  "normalized_name": "xfx_quicksilvergamingedition_amd_radeonrx9070xt_16gb",
+  "product_url": "https://geizhals.de/xfx-quicksilver-radeon-rx-9070-xt-gaming-edition-rx-97tqickb9-a3431077.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#27"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/2607b6eefd276fbbe2b3bf0f80b1fb92eda3cc176b1f97e1f035db69c7b111fc.json"
+  ]
+}

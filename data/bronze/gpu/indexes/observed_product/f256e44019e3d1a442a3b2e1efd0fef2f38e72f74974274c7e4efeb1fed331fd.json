@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "f256e44019e3d1a442a3b2e1efd0fef2f38e72f74974274c7e4efeb1fed331fd",
+  "normalized_name": "sapphire_pure_amd_radeonrx9060xt_16gb",
+  "product_url": "https://geizhals.de/sapphire-pure-radeon-rx-9060-xt-11350-02-20g-a3509278.html",
+  "first_seen_at": "2025-12-23T00:44:34Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=2.products.json#28"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/f256e44019e3d1a442a3b2e1efd0fef2f38e72f74974274c7e4efeb1fed331fd.json"
+  ]
+}

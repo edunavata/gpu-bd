@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:50:30Z",
+  "input": {
+    "model_name": "MSI GeForce RTX 5090 32G Suprim SOC, G5090-32SPS, 32GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "MSI",
+    "aib_model_suffix": "SUPRIM SOC",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5090",
+    "vram_gb": 32,
+    "is_oc": false,
+    "factory_boost_mhz": 2565,
+    "part_number": "G5090-32SPS",
+    "length_mm": 359,
+    "width_slots": null,
+    "height_mm": 76,
+    "power_connectors": "16-pin x 1 (ATX 3.1 PSU recommended)",
+    "cooling_type": "Air",
+    "fan_count": null,
+    "displayport_count": 3,
+    "displayport_version": "v2.1b",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.msi.com/Graphics-Card/GeForce-RTX-5090-32G-SUPRIM-SOC/Specification",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"MSI\",\n  \"model_suffix\": \"SUPRIM SOC\",\n  \"factory_boost_mhz\": 2565,\n  \"part_number\": \"G5090-32SPS\",\n  \"length_mm\": 359,\n  \"width_slots\": null,\n  \"height_mm\": 76,\n  \"power_connectors\": \"16-pin x 1 (ATX 3.1 PSU recommended)\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": null,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"v2.1b\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": null\n}\n```"
+  }
+}

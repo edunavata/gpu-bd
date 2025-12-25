@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "0b0d871503244652e164f509eddbe46a5eef951c5468e6a332548240b8582bb5",
+  "normalized_name": "gigabyte_aerooc_nvidia_rtx5070ti_16gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-geforce-rtx-5070-ti-aero-oc-16g-gv-n507taero-oc-16gd-a3381846.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#13"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/0b0d871503244652e164f509eddbe46a5eef951c5468e6a332548240b8582bb5.json"
+  ]
+}

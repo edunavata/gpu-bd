@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "95977608b0414390519999bacada6ccc1f5bc60499e9fb22b2a418d6a02a509f",
+  "normalized_name": "gigabyte_gamingoc_amd_radeonrx9060xt_16gb",
+  "product_url": "https://geizhals.de/gigabyte-radeon-rx-9060-xt-gaming-16g-gv-r9060xtgaming-16gd-a3496329.html",
+  "first_seen_at": "2025-12-25T02:07:20Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-25T02-07-19Z/page_pg=7.products.json#27"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/95977608b0414390519999bacada6ccc1f5bc60499e9fb22b2a418d6a02a509f.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "b5e4d3bb9beb30de1e6b1825ca005ad436b65b7aa6cc756ef9e915087f3490ee",
+  "normalized_name": "zotac_solidsff_nvidia_rtx5070ti_16gb",
+  "product_url": "https://geizhals.de/zotac-gaming-geforce-rtx-5070-ti-solid-sff-zt-b50710d3-10p-a3464375.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#23"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/b5e4d3bb9beb30de1e6b1825ca005ad436b65b7aa6cc756ef9e915087f3490ee.json"
+  ]
+}

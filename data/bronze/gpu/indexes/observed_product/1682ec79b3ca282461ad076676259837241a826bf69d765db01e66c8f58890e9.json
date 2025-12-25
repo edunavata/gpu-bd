@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "1682ec79b3ca282461ad076676259837241a826bf69d765db01e66c8f58890e9",
+  "normalized_name": "gigabyte_windforceocsff_nvidia_rtx5070_12gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-geforce-rtx-5070-windforce-oc-sff-12g-gv-n5070wf3oc-12gd-a3381918.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#25"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/1682ec79b3ca282461ad076676259837241a826bf69d765db01e66c8f58890e9.json"
+  ]
+}

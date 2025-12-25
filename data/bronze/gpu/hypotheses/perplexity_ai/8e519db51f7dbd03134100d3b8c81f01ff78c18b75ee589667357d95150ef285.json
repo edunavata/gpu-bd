@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:49:28Z",
+  "input": {
+    "model_name": "GIGABYTE Radeon RX 9070 Gaming OC 16G, 16GB GDDR6, 2x HDMI, 2x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "GIGABYTE",
+    "aib_model_suffix": "GAMING OC",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": null,
+    "vram_gb": 16,
+    "is_oc": true,
+    "factory_boost_mhz": 2700,
+    "part_number": null,
+    "length_mm": 288,
+    "width_slots": 2.5,
+    "height_mm": 50,
+    "power_connectors": "8 pin*2",
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 2,
+    "displayport_version": "2.1a",
+    "hdmi_count": 2,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.gigabyte.com/Graphics-Card/GV-R9070GAMING-OC-16GD",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n\"aib_manufacturer\": \"GIGABYTE\",\n\"model_suffix\": \"GAMING OC\",\n\"factory_boost_mhz\": 2700,\n\"part_number\": null,\n\"length_mm\": 288,\n\"width_slots\": 2.5,\n\"height_mm\": 50,\n\"power_connectors\": \"8 pin*2\",\n\"cooling_type\": \"Air\",\n\"fan_count\": 3,\n\"displayport_count\": 2,\n\"displayport_version\": \"2.1a\",\n\"hdmi_count\": 2,\n\"hdmi_version\": \"2.1b\",\n\"warranty_years\": null\n}\n```"
+  }
+}

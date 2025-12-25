@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:49:12Z",
+  "input": {
+    "model_name": "Palit GeForce RTX 5060 Ti Infinity 3, 16GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "Palit",
+    "aib_model_suffix": "Infinity 3",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5060 Ti",
+    "vram_gb": 16,
+    "is_oc": false,
+    "factory_boost_mhz": null,
+    "part_number": null,
+    "length_mm": null,
+    "width_slots": null,
+    "height_mm": null,
+    "power_connectors": null,
+    "cooling_type": null,
+    "fan_count": null,
+    "displayport_count": 3,
+    "displayport_version": "2.1b",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.palit.com/palit/vgapro.php?id=5495&lang=en",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"Palit\",\n  \"model_suffix\": \"Infinity 3\",\n  \"factory_boost_mhz\": null,\n  \"part_number\": null,\n  \"length_mm\": null,\n  \"width_slots\": null,\n  \"height_mm\": null,\n  \"power_connectors\": null,\n  \"cooling_type\": null,\n  \"fan_count\": null,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"2.1b\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": null\n}\n```"
+  }
+}

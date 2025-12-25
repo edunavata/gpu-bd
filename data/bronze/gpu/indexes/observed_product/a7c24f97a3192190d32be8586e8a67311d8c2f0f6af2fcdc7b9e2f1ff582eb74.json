@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "a7c24f97a3192190d32be8586e8a67311d8c2f0f6af2fcdc7b9e2f1ff582eb74",
+  "normalized_name": "zotacgaming_solidoc_nvidia_rtx5090_32gb_oc",
+  "product_url": "https://geizhals.de/zotac-gaming-geforce-rtx-5090-solid-oc-zt-b50900j-10p-a3382477.html",
+  "first_seen_at": "2025-12-24T22:06:49Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-24T22-06-37Z/page_pg=4.products.json#25"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/a7c24f97a3192190d32be8586e8a67311d8c2f0f6af2fcdc7b9e2f1ff582eb74.json"
+  ]
+}
