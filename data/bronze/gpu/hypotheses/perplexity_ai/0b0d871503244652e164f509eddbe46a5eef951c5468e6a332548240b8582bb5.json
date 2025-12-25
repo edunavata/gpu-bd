@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:51:14Z",
+  "input": {
+    "model_name": "GIGABYTE GeForce RTX 5070 Ti Aero OC 16G, 16GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "GIGABYTE",
+    "aib_model_suffix": "AERO OC",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5070 Ti",
+    "vram_gb": 16,
+    "is_oc": true,
+    "factory_boost_mhz": 2588,
+    "part_number": null,
+    "length_mm": null,
+    "width_slots": null,
+    "height_mm": null,
+    "power_connectors": null,
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 3,
+    "displayport_version": "2.1b",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": 4
+  },
+  "evidence": {
+    "source_url": "https://www.gigabyte.com/Graphics-Card/GV-N507TAERO-OC-16GD",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n\"aib_manufacturer\": \"GIGABYTE\",\n\"model_suffix\": \"AERO OC\",\n\"factory_boost_mhz\": 2588,\n\"part_number\": null,\n\"length_mm\": null,\n\"width_slots\": null,\n\"height_mm\": null,\n\"power_connectors\": null,\n\"cooling_type\": \"Air\",\n\"fan_count\": 3,\n\"displayport_count\": 3,\n\"displayport_version\": \"2.1b\",\n\"hdmi_count\": 1,\n\"hdmi_version\": \"2.1b\",\n\"warranty_years\": 4\n}\n```"
+  }
+}

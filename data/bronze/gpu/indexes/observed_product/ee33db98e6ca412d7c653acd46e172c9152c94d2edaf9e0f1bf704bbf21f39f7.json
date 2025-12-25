@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "ee33db98e6ca412d7c653acd46e172c9152c94d2edaf9e0f1bf704bbf21f39f7",
+  "normalized_name": "xfx_swift_amd_radeonrx9060xt_16gb_oc",
+  "product_url": "https://geizhals.de/xfx-swift-radeon-rx-9060-xt-oc-gaming-edition-rx-96tsw16bq-a3509896.html",
+  "first_seen_at": "2025-12-23T00:44:34Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=2.products.json#15"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/ee33db98e6ca412d7c653acd46e172c9152c94d2edaf9e0f1bf704bbf21f39f7.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "8856795c12e83b70406944b1f3b5d2abcc7cfe058657534faaf253e09826e454",
+  "normalized_name": "asrock_steellegend_amd_radeonrx9060xt_16gb_oc",
+  "product_url": "https://geizhals.de/asrock-radeon-rx-9060-xt-steel-legend-16gb-oc-a3504067.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#24"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/8856795c12e83b70406944b1f3b5d2abcc7cfe058657534faaf253e09826e454.json"
+  ]
+}

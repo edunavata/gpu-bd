@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:52:26Z",
+  "input": {
+    "model_name": "GIGABYTE AORUS GeForce RTX 5080 Xtreme Waterforce WB 16G, 16GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "GIGABYTE",
+    "aib_model_suffix": "AORUS XTREME WATERFORCE",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5080",
+    "vram_gb": 16,
+    "is_oc": false,
+    "factory_boost_mhz": 2805,
+    "part_number": null,
+    "length_mm": 220,
+    "width_slots": 2,
+    "height_mm": 130,
+    "power_connectors": "1x 16-Pin PCI Connector",
+    "cooling_type": "Liquid",
+    "fan_count": 3,
+    "displayport_count": 3,
+    "displayport_version": "2.1a",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": 4
+  },
+  "evidence": {
+    "source_url": "https://www.gigabyte.com/Graphics-Card/GV-N5080AORUSX-W-16GD",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"GIGABYTE\",\n  \"model_suffix\": \"AORUS XTREME WATERFORCE\",\n  \"factory_boost_mhz\": 2805,\n  \"part_number\": null,\n  \"length_mm\": 220,\n  \"width_slots\": 2,\n  \"height_mm\": 130,\n  \"power_connectors\": \"1x 16-Pin PCI Connector\",\n  \"cooling_type\": \"Liquid\",\n  \"fan_count\": 3,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"2.1a\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": 4\n}\n```"
+  }
+}

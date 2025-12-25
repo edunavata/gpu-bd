@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "eed2429bb446d901712fe435764c70a064088bf72b8e8e8012980f1d929ea5ff",
+  "normalized_name": "gigabyte_eaglemaxoc_nvidia_rtx5060ti_16gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-geforce-rtx-5060-ti-eagle-max-oc-16g-gv-n506teaglemax-oc-16gd-a3525036.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#4"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/eed2429bb446d901712fe435764c70a064088bf72b8e8e8012980f1d929ea5ff.json"
+  ]
+}

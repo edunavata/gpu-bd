@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "f5b1fb65c89435b57724731301086f062443c061ac360a0a6da4f3fa542ed1ea",
+  "normalized_name": "sapphire_pulse_amd_radeonrx9070xt_16gb",
+  "product_url": "https://geizhals.de/sapphire-pulse-radeon-rx-9070-xt-11348-03-20g-a3429991.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#4"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/f5b1fb65c89435b57724731301086f062443c061ac360a0a6da4f3fa542ed1ea.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "7a62bc4b57c2c062fbecf4fe71a6d6a656f0266b9cc92b10078a9f4e7d5c767a",
+  "normalized_name": "palit_infinity3_nvidia_rtx5070_12gb",
+  "product_url": "https://geizhals.de/palit-geforce-rtx-5070-infinity-3-ne75070019k9-gb2050s-a3441992.html",
+  "first_seen_at": "2025-12-23T00:44:35Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=3.products.json#21"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/7a62bc4b57c2c062fbecf4fe71a6d6a656f0266b9cc92b10078a9f4e7d5c767a.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "811299d4f7d523898f2b01584eae84f59ec34c8351bdeef8cc20eb0c1cfa4632",
+  "normalized_name": "asus_tuf_amd_radeonrx9070xt_16gb",
+  "product_url": "https://geizhals.de/asus-tuf-gaming-radeon-rx-9070-xt-cod-bo7-special-edition-90yv0l76-m0nm00-a3676266.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#24"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/811299d4f7d523898f2b01584eae84f59ec34c8351bdeef8cc20eb0c1cfa4632.json"
+  ]
+}

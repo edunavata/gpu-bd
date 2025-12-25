@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:50:23Z",
+  "input": {
+    "model_name": "GIGABYTE GeForce RTX 5070 Ti Eagle OC ICE SFF 16G, 16GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "GIGABYTE",
+    "aib_model_suffix": "EAGLE OC ICE SFF",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5070 Ti",
+    "vram_gb": 16,
+    "is_oc": true,
+    "factory_boost_mhz": 2542,
+    "part_number": null,
+    "length_mm": 304,
+    "width_slots": 3,
+    "height_mm": 50,
+    "power_connectors": "16 pin*1",
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 3,
+    "displayport_version": "2.1b",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": 3
+  },
+  "evidence": {
+    "source_url": "https://www.gigabyte.com/Graphics-Card/GV-N507TEAGLEOC-ICE-16GD",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"GIGABYTE\",\n  \"model_suffix\": \"EAGLE OC ICE SFF\",\n  \"factory_boost_mhz\": 2542,\n  \"part_number\": null,\n  \"length_mm\": 304,\n  \"width_slots\": 3,\n  \"height_mm\": 50,\n  \"power_connectors\": \"16 pin*1\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 3,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"2.1b\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": 3\n}\n```"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "153e7075078d0687d4a3acfe36d631b48d4b9ca2a553c7cc1c7ca260e4f64479",
+  "normalized_name": "xfx_swift_amd_radeonrx9070xt_16gb",
+  "product_url": "https://geizhals.de/xfx-swift-radeon-rx-9070-xt-triple-fan-gaming-edition-rx-97tswf3b9-a3431083.html",
+  "first_seen_at": "2025-12-23T00:44:34Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=2.products.json#4"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/153e7075078d0687d4a3acfe36d631b48d4b9ca2a553c7cc1c7ca260e4f64479.json"
+  ]
+}

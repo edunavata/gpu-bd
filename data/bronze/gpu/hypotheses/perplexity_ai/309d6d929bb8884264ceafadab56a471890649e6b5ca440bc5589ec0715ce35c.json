@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:47:19Z",
+  "input": {
+    "model_name": "ASUS ROG Astral GeForce RTX 5090 OC, ROG-ASTRAL-RTX5090-O32G-GAMING, 32GB GDDR7, 2x HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "ASUS",
+    "aib_model_suffix": "Astral",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5090",
+    "vram_gb": 32,
+    "is_oc": true,
+    "factory_boost_mhz": 2610,
+    "part_number": null,
+    "length_mm": 357.6,
+    "width_slots": 3.8,
+    "height_mm": 149.3,
+    "power_connectors": "1 x 16-pin",
+    "cooling_type": "Air",
+    "fan_count": 4,
+    "displayport_count": 3,
+    "displayport_version": "2.1b",
+    "hdmi_count": 2,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://rog.asus.com/graphics-cards/graphics-cards/rog-astral/rog-astral-rtx5090-o32g-gaming/",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"ASUS\",\n  \"model_suffix\": \"Astral\",\n  \"factory_boost_mhz\": 2610,\n  \"part_number\": null,\n  \"length_mm\": 357.6,\n  \"width_slots\": 3.8,\n  \"height_mm\": 149.3,\n  \"power_connectors\": \"1 x 16-pin\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 4,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"2.1b\",\n  \"hdmi_count\": 2,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": null\n}\n```"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "e10ec502e2543b479e7fe911c94e526a1a5d2c8bf655802a1faab3eae2b034d4",
+  "normalized_name": "msi_gamingtriooc_nvidia_rtx5080_16gb_oc",
+  "product_url": "https://geizhals.de/msi-geforce-rtx-5080-16g-gaming-trio-oc-a3382115.html",
+  "first_seen_at": "2025-12-23T00:44:34Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=2.products.json#2"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/e10ec502e2543b479e7fe911c94e526a1a5d2c8bf655802a1faab3eae2b034d4.json"
+  ]
+}

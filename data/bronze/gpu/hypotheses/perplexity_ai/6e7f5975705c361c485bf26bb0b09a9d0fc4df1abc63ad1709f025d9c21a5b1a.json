@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T22:08:01Z",
+  "input": {
+    "model_name": "ASUS Dual Radeon RX 9060 XT, DUAL-RX9060XT-8G, 8GB GDDR6, HDMI, 2x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "ASUS",
+    "aib_model_suffix": "Dual",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": "Radeon Rx 9060 Xt",
+    "vram_gb": null,
+    "is_oc": false,
+    "factory_boost_mhz": 3150,
+    "part_number": null,
+    "length_mm": 202,
+    "width_slots": 2.5,
+    "height_mm": 49,
+    "power_connectors": "1 x 8-pin",
+    "cooling_type": "Air",
+    "fan_count": null,
+    "displayport_count": 2,
+    "displayport_version": "2.1a",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.asus.com/us/motherboards-components/graphics-cards/dual/dual-rx9060xt-8g/techspec/",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"ASUS\",\n  \"model_suffix\": \"Dual\",\n  \"factory_boost_mhz\": 3150,\n  \"part_number\": null,\n  \"length_mm\": 202,\n  \"width_slots\": 2.5,\n  \"height_mm\": 49,\n  \"power_connectors\": \"1 x 8-pin\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": null,\n  \"displayport_count\": 2,\n  \"displayport_version\": \"2.1a\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": null\n}\n```"
+  }
+}

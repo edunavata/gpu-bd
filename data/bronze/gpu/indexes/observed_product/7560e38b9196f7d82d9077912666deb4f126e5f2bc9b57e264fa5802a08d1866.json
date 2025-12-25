@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "7560e38b9196f7d82d9077912666deb4f126e5f2bc9b57e264fa5802a08d1866",
+  "normalized_name": "powercolor_hellhoundspectralwhite_amd_radeonrx9060xt_16gb",
+  "product_url": "https://geizhals.de/powercolor-hellhound-spectral-white-radeon-rx-9060-xt-rx9060xt-16g-l-oc-white-a3509096.html",
+  "first_seen_at": "2025-12-25T02:07:20Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-25T02-07-19Z/page_pg=7.products.json#14"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/7560e38b9196f7d82d9077912666deb4f126e5f2bc9b57e264fa5802a08d1866.json"
+  ]
+}

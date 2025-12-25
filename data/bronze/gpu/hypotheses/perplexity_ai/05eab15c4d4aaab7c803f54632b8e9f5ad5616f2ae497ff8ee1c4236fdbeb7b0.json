@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:49:07Z",
+  "input": {
+    "model_name": "Sapphire Pulse Radeon RX 9070, 16GB GDDR6, 2x HDMI, 2x DP, lite retail"
+  },
+  "extraction": {
+    "aib_manufacturer": "Sapphire",
+    "aib_model_suffix": "PULSE",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": null,
+    "vram_gb": 16,
+    "is_oc": false,
+    "factory_boost_mhz": null,
+    "part_number": null,
+    "length_mm": null,
+    "width_slots": null,
+    "height_mm": null,
+    "power_connectors": null,
+    "cooling_type": null,
+    "fan_count": null,
+    "displayport_count": 2,
+    "displayport_version": "2.1a",
+    "hdmi_count": 2,
+    "hdmi_version": null,
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.sapphiretech.com/en/consumer/pulse-radeon-rx-9070-16g-gddr6",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"Sapphire\",\n  \"model_suffix\": \"PULSE\",\n  \"factory_boost_mhz\": null,\n  \"part_number\": null,\n  \"length_mm\": null,\n  \"width_slots\": null,\n  \"height_mm\": null,\n  \"power_connectors\": null,\n  \"cooling_type\": null,\n  \"fan_count\": null,\n  \"displayport_count\": 2,\n  \"displayport_version\": \"2.1a\",\n  \"hdmi_count\": 2,\n  \"hdmi_version\": null,\n  \"warranty_years\": null\n}\n```"
+  }
+}

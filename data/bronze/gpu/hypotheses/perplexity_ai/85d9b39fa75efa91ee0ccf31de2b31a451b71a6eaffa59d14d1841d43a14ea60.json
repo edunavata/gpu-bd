@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:52:04Z",
+  "input": {
+    "model_name": "Sparkle Arc B580 ROC LUNA OC Ultra, SB580RW-12GOC, 12GB GDDR6, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "SPARKLE",
+    "aib_model_suffix": "ROC Luna OC Ultra",
+    "chipset_manufacturer": null,
+    "chipset_model": null,
+    "vram_gb": 12,
+    "is_oc": true,
+    "factory_boost_mhz": 2800,
+    "part_number": null,
+    "length_mm": 230,
+    "width_slots": 2.2,
+    "height_mm": 128,
+    "power_connectors": "2x 8-pin",
+    "cooling_type": "Air",
+    "fan_count": 2,
+    "displayport_count": 3,
+    "displayport_version": null,
+    "hdmi_count": 1,
+    "hdmi_version": null,
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://gzhls.at/blob/ldb/7/6/c/f/d3628d390686ebb8fcff991e8b051cf08fa2.pdf",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n\"aib_manufacturer\": \"SPARKLE\",\n\"model_suffix\": \"ROC Luna OC Ultra\",\n\"factory_boost_mhz\": 2800,\n\"part_number\": null,\n\"length_mm\": 230,\n\"width_slots\": 2.2,\n\"height_mm\": 128,\n\"power_connectors\": \"2x 8-pin\",\n\"cooling_type\": \"Air\",\n\"fan_count\": 2,\n\"displayport_count\": 3,\n\"displayport_version\": null,\n\"hdmi_count\": 1,\n\"hdmi_version\": null,\n\"warranty_years\": null\n}\n```"
+  }
+}

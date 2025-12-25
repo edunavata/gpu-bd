@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "d6e84ade7475b868e9a73de23ed31d93c46ae92c2da699d85d64c41d89479594",
+  "normalized_name": "acer_bifrostoc_amd_radeonrx9070xt_16gb_oc",
+  "product_url": "https://geizhals.de/acer-predator-bifrost-radeon-rx-9070-xt-oc-dp-z4fww-p01-a3439038.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#13"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/d6e84ade7475b868e9a73de23ed31d93c46ae92c2da699d85d64c41d89479594.json"
+  ]
+}

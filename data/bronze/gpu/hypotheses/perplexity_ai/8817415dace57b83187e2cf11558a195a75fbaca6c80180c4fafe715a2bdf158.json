@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:51:31Z",
+  "input": {
+    "model_name": "XFX Swift Radeon RX 9060 XT OC Triple Fan Gaming Edition, 16GB GDDR6, HDMI, 2x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "XFX",
+    "aib_model_suffix": "Swift",
+    "chipset_manufacturer": "AMD",
+    "chipset_model": "Radeon Rx 9060 Xt",
+    "vram_gb": 16,
+    "is_oc": true,
+    "factory_boost_mhz": 3320,
+    "part_number": null,
+    "length_mm": null,
+    "width_slots": null,
+    "height_mm": null,
+    "power_connectors": "1x 8pin PCI-E Power",
+    "cooling_type": "Air",
+    "fan_count": 2,
+    "displayport_count": null,
+    "displayport_version": null,
+    "hdmi_count": null,
+    "hdmi_version": null,
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.xfxforce.com/shop/xfx-swift-amd-radeon-rx-9060xt-oc-gaming-edition-16gb",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "{\n  \"aib_manufacturer\": \"XFX\",\n  \"model_suffix\": \"Swift\",\n  \"factory_boost_mhz\": 3320,\n  \"part_number\": null,\n  \"length_mm\": null,\n  \"width_slots\": null,\n  \"height_mm\": null,\n  \"power_connectors\": \"1x 8pin PCI-E Power\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 2,\n  \"displayport_count\": null,\n  \"displayport_version\": null,\n  \"hdmi_count\": null,\n  \"hdmi_version\": null,\n  \"warranty_years\": null\n}"
+  }
+}

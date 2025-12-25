@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "a439357062999974e913ea8ea879f99c8ac4c8f1a8de72aa7789e4a69c13db3e",
+  "normalized_name": "asus_proart_nvidia_rtx5070ti_16gb_oc",
+  "product_url": "https://geizhals.de/asus-proart-geforce-rtx-5070-ti-oc-90yv0nr0-m0na00-a3586479.html",
+  "first_seen_at": "2025-12-25T02:07:20Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-25T02-07-19Z/page_pg=7.products.json#21"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/a439357062999974e913ea8ea879f99c8ac4c8f1a8de72aa7789e4a69c13db3e.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "e04e06f02f3d27711bc2d028b132dc780c10c04a67eae43ca5765887b753a615",
+  "normalized_name": "sapphire_pure_amd_16gb",
+  "product_url": "https://geizhals.de/sapphire-pure-radeon-rx-9070-11349-02-20g-a3429982.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#10"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/e04e06f02f3d27711bc2d028b132dc780c10c04a67eae43ca5765887b753a615.json"
+  ]
+}

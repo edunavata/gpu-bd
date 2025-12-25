@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "95871565b0f2bcd5bf0b073018655b918937fcfd2afe95b656ea6a734698050c",
+  "normalized_name": "msi_ventus2xocplus_nvidia_rtx5060ti_16gb_oc",
+  "product_url": "https://geizhals.de/msi-geforce-rtx-5060-ti-16g-ventus-2x-oc-plus-v535-005r-a3472845.html",
+  "first_seen_at": "2025-12-23T00:44:35Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=3.products.json#8"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/95871565b0f2bcd5bf0b073018655b918937fcfd2afe95b656ea6a734698050c.json"
+  ]
+}

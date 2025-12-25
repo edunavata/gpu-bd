@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "02cd6107f8463acc7c5fc5ed5d3e99d6cf464bee593a4c3d015e3313bc919f9c",
+  "normalized_name": "nvidia_rtx5060ti_16gb",
+  "product_url": "https://geizhals.de/inno3d-geforce-rtx-5060-ti-twin-x2-n506t2-16d7-193075n-a3472917.html",
+  "first_seen_at": "2025-12-25T02:07:20Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-25T02-07-19Z/page_pg=7.products.json#13"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/02cd6107f8463acc7c5fc5ed5d3e99d6cf464bee593a4c3d015e3313bc919f9c.json"
+  ]
+}

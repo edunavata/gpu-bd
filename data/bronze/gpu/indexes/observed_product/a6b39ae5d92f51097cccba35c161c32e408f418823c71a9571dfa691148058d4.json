@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "a6b39ae5d92f51097cccba35c161c32e408f418823c71a9571dfa691148058d4",
+  "normalized_name": "gigabyte_eagleocice_nvidia_rtx5060ti_16gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-geforce-rtx-5060-ti-eagle-oc-ice-16g-gv-n506teagleoc-ice-16gd-a3472300.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#19"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/a6b39ae5d92f51097cccba35c161c32e408f418823c71a9571dfa691148058d4.json"
+  ]
+}

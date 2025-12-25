@@ -1,0 +1,36 @@
+{
+  "hypothesis_type": "gpu_variant",
+  "source": "perplexity_ai",
+  "created_at": "2025-12-24T00:52:48Z",
+  "input": {
+    "model_name": "MSI GeForce RTX 5070 Ti 16G Inspire 3X OC, G507T-16I3C, 16GB GDDR7, HDMI, 3x DP"
+  },
+  "extraction": {
+    "aib_manufacturer": "MSI",
+    "aib_model_suffix": "INSPIRE 3X OC",
+    "chipset_manufacturer": "NVIDIA",
+    "chipset_model": "Geforce Rtx 5070 Ti",
+    "vram_gb": 16,
+    "is_oc": true,
+    "factory_boost_mhz": 2482,
+    "part_number": null,
+    "length_mm": 288,
+    "width_slots": null,
+    "height_mm": 112,
+    "power_connectors": "16-pin x 1",
+    "cooling_type": "Air",
+    "fan_count": 3,
+    "displayport_count": 3,
+    "displayport_version": "2.1b",
+    "hdmi_count": 1,
+    "hdmi_version": "2.1b",
+    "warranty_years": null
+  },
+  "evidence": {
+    "source_url": "https://www.msi.com/Graphics-Card/GeForce-RTX-5070-Ti-16G-INSPIRE-3X-OC/Specification",
+    "citations": []
+  },
+  "raw": {
+    "llm_response": "```json\n{\n  \"aib_manufacturer\": \"MSI\",\n  \"model_suffix\": \"INSPIRE 3X OC\",\n  \"factory_boost_mhz\": 2482,\n  \"part_number\": null,\n  \"length_mm\": 288,\n  \"width_slots\": null,\n  \"height_mm\": 112,\n  \"power_connectors\": \"16-pin x 1\",\n  \"cooling_type\": \"Air\",\n  \"fan_count\": 3,\n  \"displayport_count\": 3,\n  \"displayport_version\": \"2.1b\",\n  \"hdmi_count\": 1,\n  \"hdmi_version\": \"2.1b\",\n  \"warranty_years\": null\n}\n```"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "f6ac860f82c9fc702376f72a08ff6cc6ff7d438fa021253ab876d5164c35771b",
+  "normalized_name": "msi_suprimsoc_nvidia_rtx5090_32gb",
+  "product_url": "https://geizhals.de/msi-geforce-rtx-5090-32g-suprim-soc-a3382007.html",
+  "first_seen_at": "2025-12-23T00:44:35Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=3.products.json#22"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/f6ac860f82c9fc702376f72a08ff6cc6ff7d438fa021253ab876d5164c35771b.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "47d9d80b58ccf2623148bcb0879c259177d7872a8d805bed05674b60059452c4",
+  "normalized_name": "amd_16gb_oc",
+  "product_url": "https://geizhals.de/acer-predator-bifrost-radeon-rx-9070-oc-16gb-white-edition-a3614789.html",
+  "first_seen_at": "2025-12-25T02:08:07Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-25T02-08-06Z/page_pg=7.products.json#22"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/47d9d80b58ccf2623148bcb0879c259177d7872a8d805bed05674b60059452c4.json"
+  ]
+}

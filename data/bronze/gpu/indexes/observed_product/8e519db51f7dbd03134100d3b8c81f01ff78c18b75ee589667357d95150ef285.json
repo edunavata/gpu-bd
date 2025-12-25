@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "8e519db51f7dbd03134100d3b8c81f01ff78c18b75ee589667357d95150ef285",
+  "normalized_name": "gigabyte_gamingoc_amd_16gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-radeon-rx-9070-gaming-oc-16g-gv-r9070gaming-oc-16gd-a3430841.html",
+  "first_seen_at": "2025-12-23T00:44:34Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=2.products.json#27"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/8e519db51f7dbd03134100d3b8c81f01ff78c18b75ee589667357d95150ef285.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "a321b5c45d4275611587ac6c2af74a317e4100774a76a3fb4919c5a44705d889",
+  "normalized_name": "16gb",
+  "product_url": "https://geizhals.de/intel-arc-pro-b50-a3584363.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#2"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/a321b5c45d4275611587ac6c2af74a317e4100774a76a3fb4919c5a44705d889.json"
+  ]
+}

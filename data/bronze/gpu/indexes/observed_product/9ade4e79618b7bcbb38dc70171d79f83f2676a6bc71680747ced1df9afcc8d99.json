@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "9ade4e79618b7bcbb38dc70171d79f83f2676a6bc71680747ced1df9afcc8d99",
+  "normalized_name": "gigabyte_windforceocsff_nvidia_rtx5070ti_16gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-geforce-rtx-5070-ti-windforce-oc-sff-16g-gv-n507twf3oc-16gd-a3381850.html",
+  "first_seen_at": "2025-12-23T00:40:58Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-40-57Z/page_pg=1.products.json#9"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/9ade4e79618b7bcbb38dc70171d79f83f2676a6bc71680747ced1df9afcc8d99.json"
+  ]
+}

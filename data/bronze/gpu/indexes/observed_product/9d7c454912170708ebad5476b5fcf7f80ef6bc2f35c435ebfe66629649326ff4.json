@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "9d7c454912170708ebad5476b5fcf7f80ef6bc2f35c435ebfe66629649326ff4",
+  "normalized_name": "asus_rogastral_nvidia_rtx5090_32gb_oc",
+  "product_url": "https://geizhals.de/asus-rog-astral-geforce-rtx-5090-white-oc-90yv0lwa-m0na00-a3509008.html",
+  "first_seen_at": "2025-12-23T19:32:23Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=4.products.json#12"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/9d7c454912170708ebad5476b5fcf7f80ef6bc2f35c435ebfe66629649326ff4.json"
+  ]
+}

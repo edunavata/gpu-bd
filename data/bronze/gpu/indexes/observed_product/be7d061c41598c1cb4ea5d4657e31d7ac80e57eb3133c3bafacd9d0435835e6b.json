@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "be7d061c41598c1cb4ea5d4657e31d7ac80e57eb3133c3bafacd9d0435835e6b",
+  "normalized_name": "msi_vanguardsoc_nvidia_rtx5090_32gb",
+  "product_url": "https://geizhals.de/msi-geforce-rtx-5090-32g-vanguard-soc-a3381992.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#14"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/be7d061c41598c1cb4ea5d4657e31d7ac80e57eb3133c3bafacd9d0435835e6b.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "b4a0aaad004b50d269fc3e48f01f3fef0b0ffc8154dee2b3fb84a19f15b29cab",
+  "normalized_name": "asrock_taichi_amd_radeonrx9070xt_16gb_oc",
+  "product_url": "https://geizhals.de/asrock-radeon-rx-9070-xt-taichi-16gb-oc-a3430089.html",
+  "first_seen_at": "2025-12-23T00:44:34Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T00-44-34Z/page_pg=2.products.json#14"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/b4a0aaad004b50d269fc3e48f01f3fef0b0ffc8154dee2b3fb84a19f15b29cab.json"
+  ]
+}

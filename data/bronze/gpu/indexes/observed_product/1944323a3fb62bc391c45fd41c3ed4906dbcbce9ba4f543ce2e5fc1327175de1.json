@@ -1,0 +1,13 @@
+{
+  "observed_product_id": "1944323a3fb62bc391c45fd41c3ed4906dbcbce9ba4f543ce2e5fc1327175de1",
+  "normalized_name": "gigabyte_aerooc_nvidia_rtx5060ti_16gb_oc",
+  "product_url": "https://geizhals.de/gigabyte-geforce-rtx-5060-ti-aero-oc-16g-gv-n506taero-oc-16gd-a3472290.html",
+  "first_seen_at": "2025-12-23T19:32:14Z",
+  "retailer": "geizhals",
+  "marketplace_observations": [
+    "marketplace/geizhals/runs/2025-12-23T19-32-00Z/page_pg=6.products.json#18"
+  ],
+  "hypotheses": [
+    "hypotheses/perplexity_ai/1944323a3fb62bc391c45fd41c3ed4906dbcbce9ba4f543ce2e5fc1327175de1.json"
+  ]
+}
