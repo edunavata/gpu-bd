@@ -2,11 +2,11 @@
 
 This is a Proof of Concept (PoC) designed to demonstrate how to transform chaotic, unstructured hardware data into a clean, enriched, and actionable data model using LLMs and a modern data architecture.
 
-## 🎯 PoC Objectives
+## PoC Objectives
 - Intelligent Structuring: Scraping unstructured sources and using LLMs (Perplexity/GPT) to normalize and enrich technical information (e.g., extracting GPU variants from complex text strings).
 - Medallion Architecture: Implementing a three-layer data pipeline to ensure traceability and data quality.
 
-## 🏗️ Data Architecture (Medallion)
+## Data Architecture (Medallion)
 The project implements a local-first flow on SQLite:
 
 - Bronze Layer (Raw): Stores raw evidence (market observations) and LLM-generated hypotheses.
@@ -20,7 +20,7 @@ The project implements a local-first flow on SQLite:
   - Scripts include intentional delays to minimize impact on Geizhals servers.
   - Do not run the scraper indiscriminately. Always respect the terms of service and robots.txt.
 
-## 🚀 Quick Setup
+## Quick Setup
 Requirements: Python 3.10+, SQLite, and make.
 
 ```bash
@@ -33,7 +33,7 @@ The `make init` command automates:
 - Applying database migrations.
 - Loading Seeds (pre-generated data) so you can try the project without scraping immediately.
 
-## 🛠️ Pipeline Execution
+## Pipeline Execution
 If you want to run the processes manually or configure your own API:
 
 1. LLM Enrichment
@@ -60,15 +60,15 @@ python -m src.pipelines.silver_gpu_pipeline --db-path db/pcbuilder.db
 
 > Important: The Bronze pipeline scraper will likely break over time. It works today, but there is no guarantee it will keep working as sites change.
 
-## 📂 Project Structure
+## Project Structure
 - `/domain/gpu/`: Business logic and hardware-specific data models.
 - `/src/pipelines/`: Orchestration of the Bronze and Silver layers.
 - `/db/`: SQL schemas and local database.
 
-## 📊 Analysis and Use Cases (Data Insights)
+## Analysis and Use Cases (Data Insights)
 Once data has been processed through the Bronze and Silver layers, the Gold layer enables advanced analysis for decision-making. Here are some examples of what you can extract from the database:
 
-### 💰 1. Best Power/Price Ratio by Segment
+### 1. Best Power/Price Ratio by Segment
 This query identifies the leading GPUs in economic efficiency (performance per euro invested), categorized by user budget.
 
 ```sql
@@ -88,7 +88,7 @@ FROM MarketSegments
 WHERE rank <= 3;
 ```
 
-#### 🏆 Top Picks by Budget
+#### Top Picks by Budget
 
 | Segmento | Modelo | Precio | Score Eficiencia |
 | --- | --- | --- | --- |
@@ -96,7 +96,7 @@ WHERE rank <= 3;
 | Mid-Range | GeForce RTX 5070 | 519.00€ | 297.14 |
 | High-End | GeForce RTX 5080 | 1029.00€ | 273.76 |
 
-### 🤖 2. VRAM Efficiency for Artificial Intelligence
+### 2. VRAM Efficiency for Artificial Intelligence
 For AI workloads, the amount of VRAM available per watt consumed (TDP) is critical. This query cross-references chip technical data with market metrics.
 
 ```sql
@@ -111,7 +111,7 @@ WHERE ai.vram_gb >= 16
 ORDER BY vram_mb_per_watt DESC LIMIT 5;
 ```
 
-#### 🔋 Energy Efficiency in AI
+#### Energy Efficiency in AI
 
 | Model | VRAM | TDP | MB of VRAM per Watt |
 | --- | --- | --- | --- |
